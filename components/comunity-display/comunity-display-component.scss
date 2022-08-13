@@ -1,0 +1,16 @@
+.Comunity-display {
+  background-color: #d3c9a8;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 1rem;
+
+  .user-image{
+    background-color: red;
+    height: 5rem;
+    width: 5rem;
+  }
+
+  .follow-btn{
+    border-radius: 5rem;
+    background-color: #fff;  
+  }
+}

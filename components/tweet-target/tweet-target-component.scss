@@ -1,0 +1,39 @@
+.Tweet-target {
+  background-color: #339949;
+  padding: 1.5rem;
+  border-radius: 3rem;
+
+  .teewt-data {
+    gap: 1rem;
+  }
+
+  .user-image-content {
+    flex: 1;
+  }
+
+  .teewt-content {
+    flex: 8;
+  }
+
+  .user-image {
+    background-color: red;
+    height: 5rem;
+    width: 5rem;
+  }
+
+  .reaction-btns-content {
+
+
+    .r-action-btns-content,
+    .large-btns-content {
+      gap: 1rem;
+    }
+
+    .r-action-btn {
+      background-color: antiquewhite;
+      max-width: 5rem;
+    }
+  }
+
+
+}

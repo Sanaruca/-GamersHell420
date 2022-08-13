@@ -1,0 +1,47 @@
+.flex {
+  display: flex;
+
+  *{
+    flex: 1;
+  }
+}
+
+.center{
+  justify-content: center;
+  align-items: center;
+}
+
+.col {
+  flex-flow: column nowrap;
+}
+
+.grid {
+  display: grid;
+}
+
+.circle{
+  border-radius: 50%;
+}
+
+.center{
+  justify-content: center;
+  align-items: center;
+}
+
+.absolute{
+  position: absolute;
+}
+
+.btn{
+  padding: 1rem;
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+
+  &.large{
+    background-color: royalblue;
+    width: 20rem;
+  }
+}

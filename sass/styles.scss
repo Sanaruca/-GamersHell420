@@ -1,0 +1,12 @@
+@use '_reset.scss';
+@use '_utilities.scss';
+
+// components
+// @use '../components/user-target/user-target-component.scss';
+@use '../components/tweet-target/tweet-target-component.scss';
+
+
+body{
+  padding: 2rem;
+}
+

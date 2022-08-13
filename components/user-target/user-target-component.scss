@@ -1,0 +1,29 @@
+.User-target{
+  background-color: rebeccapurple;
+  max-width: 30rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  
+  min-height: 40rem;
+
+
+  .user-front-page-image{
+    background: bisque;
+    height: 8rem;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  .user-image{
+    margin-top: 4rem; // here??
+    background-color: #d14d0096;
+    min-width: 7rem;
+    min-height: 7rem;
+  }
+
+
+  .account-summary{
+    grid-template-columns: auto auto;
+
+  }
+}

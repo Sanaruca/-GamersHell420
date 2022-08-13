@@ -1,0 +1,19 @@
+.Trend-display {
+  background-color: #d3c9a8;
+  justify-content: space-between;
+
+
+
+  .options-btn {
+    gap: 0.3rem;
+    background: red;
+    padding: 1rem;
+
+    .circle {
+      background-color: white;
+      height: 0.6rem;
+      width: 0.6rem;
+    }
+  }
+
+}

@@ -1,4 +1,4 @@
-.Tweet-target
+.Tweet-target.target
   .teewt-data.flex
     .user-image-content
       .user-image.circle
@@ -6,7 +6,7 @@
       h4 usuario del tweet
       p posted by @someone ● 32 minutes ago 🖼🔒
       p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, maiores!
-      .teewt-reactions-content.flex
+      .teewt-reactions-content.flex.not-distribute
         .main-reactions-content.flex
           .teewt-likes-count-content
             span 👍 213
@@ -15,16 +15,16 @@
         .teewt-comments-count-content
           span 45 Comments
   //- ------------------
-  .reaction-btns-content.flex
+  .reaction-btns-content.flex.not-distribute
     //- up and down 
     .r-action-btns-content.flex
-      .r-action-btn.btn
-      .r-action-btn.btn
-    //-ribbon 
-    .r-action.btn
+      .r-action-btn.btn.bg-3 ▲
+      .r-action-btn.btn.bg-3 ▼
+    //-ribbon btn
+    .r-action-btn.btn.bg-3 🥇
     //- retweet and comment
     .large-btns-content.flex
-      .btn.large ↻ Retweet
-      .btn.large 💬 comment
+      .btn.large.bg-3 ↻ Retweet
+      .btn.large.bg-3 💬 comment
     //- export btn
-    .btn
+    .r-action-btn.btn.bg-3 ▢

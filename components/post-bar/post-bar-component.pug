@@ -1,12 +1,12 @@
-.Post-bar.flex
+.Post-bar.flex.target
   .user-image-content
     .user-image.circle
   .controls-content 
     .from-control
-      input#tweet-input(type="text", name="tweet-input", placeholder="Lorem, ipsum dolor?") 
+      input#tweet-input.bg-3(type="text", name="tweet-input", placeholder="Lorem, ipsum dolor?") 
     .btns-content.flex
       label.btn(for="upload-photo") 🖼 Photo
-      .btn(for="upload-photo") 🖼 Poll
-      .btn(for="upload-photo") 🖼 Emogis
+      .btn 🖼 Poll
+      .btn 🖼 Emogis
       //- hidden
       input#upload-photo.hidden(type="file", name="photo",accept="image/png, image/jpeg")

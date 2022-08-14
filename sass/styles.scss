@@ -9,9 +9,23 @@
 @use '../components/trend-display/trend-display-component.scss';
 @use '../components/trends-target/trends-target-component.scss';
 @use '../components/post-bar/post-bar-component.scss';
+@use '../components/main-dash-board/main-dash-board-component.scss';
 
 
-body{
+body {
   padding: 2rem;
+  background-color: #07131F;
+  color: #E4EBF2;
+  font-family: Mukta, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.target {
+  background-color: #1A2632;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  box-shadow: #00000010 0rem 0.5rem 1rem 0rem;
+}
+
+.bg-3 {
+  background-color: #283440;
+}

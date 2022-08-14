@@ -10,12 +10,16 @@ html {
   font-size: 10px;
 }
 
-body{
-  font-size: 1.8rem;
+body {
+  font-size: 1.6rem;
 }
 
 // froms
 input[type="text"] {
   border: none;
   padding: 1rem;
+}
+
+p {
+  margin: 0.5rem 0;
 }

@@ -61,9 +61,18 @@ a {
 // froms
 input[type="text"] {
   padding: 1rem;
+  color: inherit;
 }
 
 .form-control> 
 input[type="text"] {
   width: 100%;
+}
+
+// dev only
+
+
+.user-image{
+  background: url(https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=260&h=750&dpr=1);
+  background-size: cover;
 }

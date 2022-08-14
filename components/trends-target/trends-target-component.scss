@@ -6,6 +6,13 @@
     text-transform: uppercase;
   }
 
+  .conconfig-btn{
+    font-size: 1.5em;
+    z-index: 100;
+    right: 1rem; // of target padding
+    top: 1rem; // of target padding
+  }
+
   .trending-content{
     margin: .5rem 0;
     gap: 1rem;

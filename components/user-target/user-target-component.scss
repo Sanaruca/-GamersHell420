@@ -2,8 +2,9 @@
   // background-color: rebeccapurple;
   max-width: 30rem;
   overflow: hidden;
-
   min-height: 40rem;
+
+
 
 
   .user-front-page-image {
@@ -16,6 +17,17 @@
 
   .user-data-content {
     justify-content: start;
+
+    .user-name {
+      font-size: 1.4em;
+      margin: 0.5rem 0rem 0rem;
+    }
+
+  }
+
+  .account-summary * span:first-of-type {
+    /* background: rebeccapurple; */
+    font-size: 1.25em;
   }
 
 
@@ -34,8 +46,9 @@
     border-top: solid 1px #283440;
     margin: 1rem 0;
     padding: 1rem 0;
-    
-    .tweets-conunt, .comments-conunt{
+
+    .tweets-conunt,
+    .comments-conunt {
       border-bottom: solid 1px #283440;
     }
   }

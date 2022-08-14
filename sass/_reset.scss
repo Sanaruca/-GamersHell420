@@ -16,5 +16,9 @@ body {
   font-size: 1.6rem;
 }
 
+textarea:focus, input:focus{
+  outline: none;
+}
+
 
 

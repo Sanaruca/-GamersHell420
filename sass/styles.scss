@@ -19,6 +19,27 @@ body {
   font-family: Mukta, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+
+// text
+.mintext {
+  font-size: .8em;
+}
+
+.t-color-3{
+  color: #7C8594;
+}
+
+
+p {
+  margin: 0.5rem 0;
+}
+
+a {
+  color: #2F94D9
+}
+
+// ---------------------
+
 .target {
   background-color: #1A2632;
   border-radius: 1.5rem;
@@ -28,4 +49,10 @@ body {
 
 .bg-3 {
   background-color: #283440;
+}
+
+
+// froms
+input[type="text"] {
+  padding: 1rem;
 }

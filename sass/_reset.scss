@@ -3,7 +3,9 @@
   margin: 0;
   padding: 0;
   position: relative;
-  list-style: none
+  list-style: none;
+  text-decoration: none;
+  border: none;
 }
 
 html {
@@ -14,12 +16,5 @@ body {
   font-size: 1.6rem;
 }
 
-// froms
-input[type="text"] {
-  border: none;
-  padding: 1rem;
-}
 
-p {
-  margin: 0.5rem 0;
-}
+

@@ -1,12 +1,12 @@
-.User-target{
+.User-target {
   // background-color: rebeccapurple;
   max-width: 30rem;
   overflow: hidden;
-  
+
   min-height: 40rem;
 
 
-  .user-front-page-image{
+  .user-front-page-image {
     background: bisque;
     height: 8rem;
     width: 100%;
@@ -14,12 +14,12 @@
     left: 0;
   }
 
-  .user-data-content{
+  .user-data-content {
     justify-content: start;
   }
 
 
-  .user-image{
+  .user-image {
     margin-top: 3rem; // here??
     background-color: #46B8DF;
     width: 7rem;
@@ -27,8 +27,16 @@
   }
 
 
-  .account-summary{
-    grid-template-columns: auto auto;
-
+  .account-summary {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1rem;
+    border-bottom: solid 1px #283440;
+    border-top: solid 1px #283440;
+    margin: 1rem 0;
+    padding: 1rem 0;
+    
+    .tweets-conunt, .comments-conunt{
+      border-bottom: solid 1px #283440;
+    }
   }
 }

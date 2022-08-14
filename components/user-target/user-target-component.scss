@@ -13,11 +13,17 @@
     top: 0;
     left: 0;
   }
+
+  .user-data-content{
+    justify-content: start;
+  }
+
+
   .user-image{
-    margin-top: 4rem; // here??
-    background-color: #d14d0096;
-    min-width: 7rem;
-    min-height: 7rem;
+    margin-top: 3rem; // here??
+    background-color: #46B8DF;
+    width: 7rem;
+    height: 7rem;
   }
 
 

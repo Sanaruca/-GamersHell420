@@ -11,6 +11,9 @@
 @use '../components/post-bar/post-bar-component.scss';
 @use '../components/main-dash-board/main-dash-board-component.scss';
 
+@use '../components/nav-bar/nav-bar-component.scss';
+
+
 
 body {
   padding: 2rem;
@@ -25,7 +28,7 @@ body {
   font-size: .8em;
 }
 
-.t-color-3{
+.t-color-3 {
   color: #7C8594;
 }
 
@@ -55,4 +58,9 @@ a {
 // froms
 input[type="text"] {
   padding: 1rem;
+}
+
+.form-control> 
+input[type="text"] {
+  width: 100%;
 }

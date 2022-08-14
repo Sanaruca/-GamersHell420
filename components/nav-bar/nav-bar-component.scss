@@ -1,0 +1,74 @@
+.Nav-bar {
+  // background-color: blueviolet;
+  margin-bottom: 3rem;
+
+
+  .seach-bar-content .form-control {
+    max-width: 25rem;
+  }
+
+
+
+  // other
+
+  .other {
+    gap: 2rem;
+    justify-content: end;
+
+
+    .panel-btns-content {
+      gap: 2rem;
+    }
+
+    .home-link {
+      background-color: #fff;
+      color: #000;
+      min-width: max-content;
+    }
+
+
+
+
+    .notifications-content {
+
+      gap: 1rem;
+
+    }
+
+    .user-account-dropdown-content {
+      min-width: 15rem;
+      justify-content: start;
+      gap: 1rem;
+      padding: .5rem 1rem;
+
+      &::after {
+        content: '▼';
+        color: #fff;
+        position: absolute;
+        right: 1rem; //pading
+
+
+      }
+
+      .user-image {
+        background-color: aquamarine;
+        height: 3rem;
+        width: 3rem;
+      }
+    }
+
+    .showmore-btn {
+      height: 5rem;
+      width: 5rem;
+      // background-color: red;
+    }
+
+    .ford-points-btn,
+    .messages-btn,
+    .notifications-btn,
+    .showmore-btn {
+      background-color: transparent;
+    }
+
+  }
+}

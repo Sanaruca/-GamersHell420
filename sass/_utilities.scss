@@ -29,12 +29,16 @@
 
 .btn {
   padding: .5rem 1rem;
-  background-color: rgb(24, 24, 24);
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 1rem;
   cursor: pointer;
+  
+  &.wb { // with border
+    border: 2px solid #283440;
+    // background-color: #283440;
+  }
 
   &.large {
     // background-color: royalblue;

@@ -7,9 +7,18 @@ main.Main-dash-board.grid
     include ../tweet-target/tweet-target-component.pug
     include ../tweet-target/tweet-target-component.pug
 
+  //- left
   section.side-bar-l.flex.col.not-distribute
     include ../user-target/user-target-component.pug
     include ../comunity-target/comunity-target-component.pug
 
+  //- rigth
   section.side-bar-r.flex.col.not-distribute
+    //- Advertisement
+    include ../advertisement/advertisement-component.pug
+
+    //- trends target
     include ../trends-target/trends-target-component.pug
+
+    //- Advertisement
+    include ../advertisement/advertisement-component.pug

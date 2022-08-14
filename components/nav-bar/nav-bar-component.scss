@@ -39,15 +39,21 @@
       min-width: 15rem;
       justify-content: start;
       gap: 1rem;
-      padding: .5rem 1rem;
 
       &::after {
         content: '▼';
         color: #fff;
         position: absolute;
         right: 1rem; //pading
+      }
 
-
+      &::before {
+        content: "";
+        position: absolute;
+        background-color: #283440;
+        width: 1px;
+        height: 80%;
+        left: -1.4rem;
       }
 
       .user-image {

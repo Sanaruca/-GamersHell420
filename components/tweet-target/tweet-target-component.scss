@@ -1,6 +1,12 @@
 .Tweet-target {
   // background-color: #339949;
 
+  .Option-button{
+    position: absolute;
+    z-index: 100;
+    right: 1rem; // target apdding
+  }
+
   .teewt-data {
     gap: 1rem;
   }

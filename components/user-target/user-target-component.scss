@@ -4,9 +4,6 @@
   overflow: hidden;
   min-height: 40rem;
 
-
-
-
   .user-front-page-image {
     background: bisque;
     height: 8rem;
@@ -39,6 +36,7 @@
   }
 
 
+  // -------------------------
   .account-summary {
     grid-template-columns: 1fr 1fr;
     row-gap: 1rem;
@@ -47,9 +45,5 @@
     margin: 1rem 0;
     padding: 1rem 0;
 
-    .tweets-conunt,
-    .comments-conunt {
-      border-bottom: solid 1px #283440;
-    }
   }
 }

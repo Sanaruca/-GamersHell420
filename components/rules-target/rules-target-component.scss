@@ -1,3 +1,27 @@
-.Rules-target{
-  
+.Rules-target {
+
+  .rues-content ol li {
+    // list-style: circle;
+    // list-style-position: inside;
+    margin: 1.3rem 0;
+
+    &::before {
+      content: "";
+      background: #7c8594;
+      width: 0.7rem;
+      min-width: 0.7rem;
+      border-radius: 50%;
+      height: 0.7rem;
+      margin-right: 1rem;
+    }
+
+    // p{
+    //   // display: inline;
+    // }
+
+    .dropdown-btn.btn {
+      //   background-color: red;
+      font-size: 1.4em;
+    }
+  }
 }

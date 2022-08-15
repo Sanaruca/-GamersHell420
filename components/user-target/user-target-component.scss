@@ -35,6 +35,15 @@
     height: 7rem;
   }
 
+  // -------------------------
+  .btns-content{
+    grid-template: auto / 1fr 1fr;
+    
+    .Big-button{
+      font-size: 1em;
+    }
+  }
+
 
   // -------------------------
   .account-summary {

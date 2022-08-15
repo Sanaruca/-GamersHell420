@@ -1,27 +1,35 @@
 .Rules-target {
 
-  .rues-content ol li {
-    // list-style: circle;
-    // list-style-position: inside;
-    margin: 1.3rem 0;
+  .rues-content>ol>li {
 
-    &::before {
-      content: "";
-      background: #7c8594;
-      width: 0.7rem;
-      min-width: 0.7rem;
-      border-radius: 50%;
-      height: 0.7rem;
-      margin-right: 1rem;
+    label {
+      padding: 1.3rem 1rem;
+      justify-content: space-between;
+
+      &::after {
+        content: '\276F';
+        font-size: 1.5em;
+        transition: ease-in-out .2s;
+      }
     }
 
-    // p{
-    //   // display: inline;
-    // }
-
-    .dropdown-btn.btn {
-      //   background-color: red;
-      font-size: 1.4em;
+    .rule-description-content {
+      max-height: 0;
+      overflow: hidden;
+      // background-color: rebeccapurple;
+      transition: all .2s;
     }
+
+    input:checked {
+      +label::after{
+        transform: rotate(90deg);
+      }
+
+      ~.rule-description-content {
+        max-height: 100vh;
+        padding: 1rem 2rem 1rem;
+      }
+    }
+
   }
 }

@@ -1,0 +1,42 @@
+.Comments-section {
+  // background-color: #00a2ff94;
+  min-height: 10rem;
+  margin-top: 3rem;
+  padding-top: 2rem;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 1px;
+    background-color: var(--color-3);
+    width: 100%;
+  }
+
+  // -----------------------
+  .user-account-comment-bar-content {
+    justify-content: space-between;
+    
+    
+    .user-image {
+      height: 4rem;
+      width: 4rem;
+    }
+    
+    
+    .form-control {
+      flex: 1;
+    }
+  }
+
+  // -----------------------
+  .user-comment-content{
+
+    .comment-action-btns-content{
+      .reply-btn{
+        min-width: max-content;
+      }
+    }
+  }
+
+}

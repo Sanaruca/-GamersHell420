@@ -4,6 +4,7 @@
 // components
 @use '../components/user-target/_user-target-component.scss';
 @use '../components/tweet-target/_tweet-target-component.scss';
+@use '../components/comments-section/_comments-section-component.scss';
 @use '../components/comunity-display/_comunity-display-component.scss';
 @use '../components/comunity-target/_comunity-target-component.scss';
 @use '../components/trend-display/_trend-display-component.scss';
@@ -22,10 +23,14 @@
 @use '../components/management-target/_management-target-component.scss';
 
 
+:root{
+  --color-primary: #46B8DF;
+  --color-3: #283440;
+}
+
 body {
   padding: 2rem;
   background-color: #07131F;
-  background: red;
   color: #E4EBF2;
   font-family: Mukta, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -56,6 +61,11 @@ a {
   border-radius: 1.5rem;
   padding: 1.5rem;
   box-shadow: #00000010 0rem 0.5rem 1rem 0rem;
+}
+
+// bg
+.bg-primary {
+  background-color: var(--color-primary);
 }
 
 .bg-3 {

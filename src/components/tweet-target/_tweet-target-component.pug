@@ -10,8 +10,8 @@
       h4 usuario del tweet
       p.posted-by.t-color-3 posted by @someone ● 32 minutes ago 🖼🔒
       p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, maiores!
-      .teewt-reactions-content.flex.not-distribute
-        .main-reactions-content.flex
+      .teewt-reactions-content.flex.nd
+        .main-reactions-content.flex.gap-2
           .teewt-likes-count-content
             span 👍 213
           .teewt-shared-count-content
@@ -19,7 +19,7 @@
         .teewt-comments-count-content.mintext.t-color-3
           span 45 Comments
   //- ------------------
-  .reaction-btns-content.flex.not-distribute
+  .reaction-btns-content.flex.nd
     //- up and down 
     .r-action-btns-content.flex
       .r-action-btn.btn.bg-3 ▲
@@ -32,3 +32,5 @@
       .btn.large.bg-3 💬 comment
     //- export btn
     .r-action-btn.btn.bg-3 ▢
+  //- ------------------
+  include ../comments-section/_comments-section-component.pug

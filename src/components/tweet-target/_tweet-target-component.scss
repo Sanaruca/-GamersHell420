@@ -1,0 +1,57 @@
+.Tweet-target {
+  // background-color: #339949;
+
+  .Option-button{
+    position: absolute;
+    z-index: 100;
+    right: 1rem; // target apdding
+  }
+
+  .teewt-data {
+    gap: 1rem;
+  }
+
+
+  .teewt-content {
+    flex: 8;
+    
+    .posted-by{
+      font-size: .9em;
+    }
+  }
+
+  .user-image-content {
+    flex: 1;
+
+    .user-image {
+      background-color: #46B8DF;
+      height: 5rem;
+      width: 5rem;
+    }
+  }
+
+  .teewt-reactions-content {
+    justify-content: space-between;
+    margin: 2rem 0;
+
+    .main-reactions-content {
+      gap: 2rem;
+    }
+  }
+
+  .reaction-btns-content {
+    gap: 1rem;
+
+    .r-action-btn {
+      width: 5rem;
+    }
+
+    .r-action-btns-content,
+    .large-btns-content {
+      gap: 1rem;
+    }
+
+  }
+
+
+}

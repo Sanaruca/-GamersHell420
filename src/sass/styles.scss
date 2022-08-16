@@ -1,0 +1,83 @@
+@use '_reset.scss';
+@use '_utilities.scss';
+
+// components
+@use '../components/user-target/_user-target-component.scss';
+@use '../components/tweet-target/_tweet-target-component.scss';
+@use '../components/comunity-display/_comunity-display-component.scss';
+@use '../components/comunity-target/_comunity-target-component.scss';
+@use '../components/trend-display/_trend-display-component.scss';
+@use '../components/trends-target/_trends-target-component.scss';
+@use '../components/post-bar/_post-bar-component.scss';
+@use '../components/main-dash-board/_main-dash-board-component.scss';
+@use '../components/option-button/_option-button-component.scss';
+@use '../components/advertisement/_advertisement-component.scss';
+
+@use '../components/nav-bar/_nav-bar-component.scss';
+@use '../components/big-button/_big-button-component.scss';
+
+//new
+@use '../components/rules-target/_rules-target-component.scss';
+
+@use '../components/management-target/_management-target-component.scss';
+
+
+body {
+  padding: 2rem;
+  background-color: #07131F;
+  background: red;
+  color: #E4EBF2;
+  font-family: Mukta, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+// text
+.mintext {
+  font-size: .8em;
+}
+
+.t-color-3 {
+  color: #7C8594;
+}
+
+
+p {
+  margin: 0.5rem 0;
+}
+
+a {
+  color: #2F94D9
+}
+
+// ---------------------
+
+.target {
+  background-color: #1A2632;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  box-shadow: #00000010 0rem 0.5rem 1rem 0rem;
+}
+
+.bg-3 {
+  background-color: #283440;
+}
+
+
+// froms
+input[type="text"] {
+  padding: 1rem;
+  color: inherit;
+}
+
+.form-control> 
+input[type="text"] {
+  width: 100%;
+}
+
+// dev only
+
+
+.user-image{
+  background: url(https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=260&h=750&dpr=1);
+  background-size: cover;
+}

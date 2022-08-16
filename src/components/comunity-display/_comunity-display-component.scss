@@ -1,0 +1,27 @@
+.Comunity-display {
+  // background-color: #d3c9a8;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 1rem;
+
+  .user-image{
+    background-color: #46B8DF;
+    height: 5rem;
+    width: 5rem;
+  }
+
+  .comunity-data-content{
+
+    p{
+      margin: 0;
+    }
+
+
+  }
+
+  .follow-btn{
+    border-radius: 5rem;
+    color: #000;
+    background-color: #fff;  
+    min-width: 7rem;
+  }
+}

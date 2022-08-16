@@ -1,7 +1,6 @@
 @charset "UTF-8";
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   position: relative;
@@ -23,19 +22,13 @@ textarea:focus, input:focus {
 }
 
 .flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .flex * {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
 }
 .flex.not-distribute * {
-  -webkit-box-flex: initial;
-      -ms-flex: initial;
-          flex: initial;
+  flex: initial;
 }
 
 .gap-1 {
@@ -51,23 +44,15 @@ textarea:focus, input:focus {
 }
 
 .center {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .col {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
+  flex-flow: column nowrap;
 }
 
 .grid {
-  display: -ms-grid;
   display: grid;
 }
 
@@ -77,15 +62,9 @@ textarea:focus, input:focus {
 
 .btn {
   padding: 0.5rem 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   border-radius: 1rem;
   cursor: pointer;
 }
@@ -101,12 +80,8 @@ textarea:focus, input:focus {
 }
 
 .center {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .absolute {
@@ -134,9 +109,7 @@ textarea:focus, input:focus {
   left: 0;
 }
 .User-target .user-data-content {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  justify-content: start;
 }
 .User-target .user-data-content .user-name {
   font-size: 1.4em;
@@ -153,15 +126,12 @@ textarea:focus, input:focus {
   height: 7rem;
 }
 .User-target .btns-content {
-  -ms-grid-rows: auto;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template: auto/1fr 1fr;
+  grid-template: auto/1fr 1fr;
 }
 .User-target .btns-content .Big-button {
   font-size: 1em;
 }
 .User-target .account-summary {
-  -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   row-gap: 1rem;
   border-bottom: solid 1px #283440;
@@ -179,14 +149,12 @@ textarea:focus, input:focus {
   display: inline;
 }
 .User-target .theme-switcher-content {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 .User-target .theme-switcher-content .switcher-content .switcher-btn.btn {
   background-color: #434a50;
   height: 2.5rem;
   width: 6rem;
-  -webkit-transition: linear 0.1s;
   transition: linear 0.1s;
 }
 .User-target .theme-switcher-content .switcher-content .switcher-btn.btn::after {
@@ -197,9 +165,7 @@ textarea:focus, input:focus {
   left: 3px;
   height: 2rem;
   width: 2rem;
-  -webkit-box-shadow: 0rem 0rem 1rem 0rem rgba(0, 0, 0, 0.2705882353);
-          box-shadow: 0rem 0rem 1rem 0rem rgba(0, 0, 0, 0.2705882353);
-  -webkit-transition: cubic-bezier(0, 0, 0, 1) 0.5s;
+  box-shadow: 0rem 0rem 1rem 0rem rgba(0, 0, 0, 0.2705882353);
   transition: cubic-bezier(0, 0, 0, 1) 0.5s;
 }
 .User-target .theme-switcher-content .switcher-content #isThemeOn:checked + .switcher-btn {
@@ -207,8 +173,7 @@ textarea:focus, input:focus {
 }
 .User-target .theme-switcher-content .switcher-content #isThemeOn:checked + .switcher-btn:after {
   left: calc(100% - 3px);
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  transform: translateX(-100%);
 }
 
 .Tweet-target .Option-button {
@@ -220,17 +185,13 @@ textarea:focus, input:focus {
   gap: 1rem;
 }
 .Tweet-target .teewt-content {
-  -webkit-box-flex: 8;
-      -ms-flex: 8;
-          flex: 8;
+  flex: 8;
 }
 .Tweet-target .teewt-content .posted-by {
   font-size: 0.9em;
 }
 .Tweet-target .user-image-content {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
 }
 .Tweet-target .user-image-content .user-image {
   background-color: #46B8DF;
@@ -238,9 +199,7 @@ textarea:focus, input:focus {
   width: 5rem;
 }
 .Tweet-target .teewt-reactions-content {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin: 2rem 0;
 }
 .Tweet-target .teewt-reactions-content .main-reactions-content {
@@ -258,7 +217,6 @@ textarea:focus, input:focus {
 }
 
 .Comunity-display {
-  -ms-grid-columns: 1fr 1rem 2fr 1rem 1fr;
   grid-template-columns: 1fr 2fr 1fr;
   gap: 1rem;
 }
@@ -286,9 +244,7 @@ textarea:focus, input:focus {
 }
 
 .Trend-display {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 .Trend-display .tag {
   color: inherit;
@@ -324,9 +280,7 @@ textarea:focus, input:focus {
   background-color: #46B8DF;
 }
 .Post-bar .controls-content {
-  -webkit-box-flex: 8;
-      -ms-flex: 8;
-          flex: 8;
+  flex: 8;
 }
 .Post-bar #tweet-input {
   font-size: 1.8rem;
@@ -341,36 +295,26 @@ textarea:focus, input:focus {
 
 .Main-dash-board {
   min-height: 100vh;
-  -ms-grid-columns: 1fr 1rem 68rem 1rem 1fr;
   grid-template-columns: 1fr 68rem 1fr;
-  -ms-grid-rows: auto;
   grid-template-rows: auto;
   gap: 1rem;
-      grid-template-areas: "l content r";
+  grid-template-areas: "l content r";
   margin-top: 8rem;
 }
 .Main-dash-board .main, .Main-dash-board .side-bar-l, .Main-dash-board .side-bar-r {
   gap: 2rem;
 }
 .Main-dash-board .main {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
   grid-area: content;
 }
 .Main-dash-board .side-bar-l {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: l;
 }
 .Main-dash-board .side-bar-r {
-  -ms-grid-row: 1;
-  -ms-grid-column: 5;
   grid-area: r;
 }
 
 .Option-button {
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
   max-width: max-content;
   gap: 4px;
   padding: 1rem;
@@ -404,9 +348,7 @@ textarea:focus, input:focus {
 }
 .Nav-bar .other {
   gap: 2rem;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  justify-content: end;
 }
 .Nav-bar .other .panel-btns-content {
   gap: 2rem;
@@ -414,8 +356,6 @@ textarea:focus, input:focus {
 .Nav-bar .other .home-link {
   background-color: #fff;
   color: #000;
-  min-width: -webkit-max-content;
-  min-width: -moz-max-content;
   min-width: max-content;
 }
 .Nav-bar .other .notifications-content {
@@ -423,9 +363,7 @@ textarea:focus, input:focus {
 }
 .Nav-bar .other .user-account-dropdown-content {
   min-width: 15rem;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  justify-content: start;
   gap: 1rem;
 }
 .Nav-bar .other .user-account-dropdown-content::after {
@@ -469,25 +407,20 @@ textarea:focus, input:focus {
 
 .Rules-target .rues-content > ol > li label {
   padding: 1.3rem 1rem;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 .Rules-target .rues-content > ol > li label::after {
   content: "❯";
   font-size: 1.5em;
-  -webkit-transition: ease-in-out 0.2s;
   transition: ease-in-out 0.2s;
 }
 .Rules-target .rues-content > ol > li .rule-description-content {
   max-height: 0;
   overflow: hidden;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 .Rules-target .rues-content > ol > li input:checked + label::after {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 .Rules-target .rues-content > ol > li input:checked ~ .rule-description-content {
   max-height: 100vh;
@@ -529,8 +462,7 @@ a {
   background-color: #1A2632;
   border-radius: 1.5rem;
   padding: 1.5rem;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.062745098) 0rem 0.5rem 1rem 0rem;
-          box-shadow: rgba(0, 0, 0, 0.062745098) 0rem 0.5rem 1rem 0rem;
+  box-shadow: rgba(0, 0, 0, 0.062745098) 0rem 0.5rem 1rem 0rem;
 }
 
 .bg-3 {
@@ -550,3 +482,5 @@ input[type=text] {
   background: url(https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=260&h=750&dpr=1);
   background-size: cover;
 }
+
+/*# sourceMappingURL=styles.css.map */

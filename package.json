@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "build": "concurrently \"npm:build:html\" \"npm:build:css\"",
+    "build:html": "pug index.pug --out build",
+    "build:css": "sass src/sass/styles.scss build/css/styles.css",
+    "dev":"run-when-changed --watch src/**/*.pug --watch src/**/*.scss  --exec \"npm run build\""
+  },
+  "devDependencies": {
+    "run-when-changed": "2.1.0"
+  }
+}

@@ -1,0 +1,38 @@
+.User-target.flex.col.target.gap-2
+  .user-front-page-image.absolute
+  .user-data-content.flex.not-distribute.col.center
+    .user-image.circle
+    //- user = comunity
+    span.user-name comunityname
+    span.t-color-3.user-description.mintext.t-center
+      | Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      | Totam ducimus distinctio mollitia doloribus ea, blanditiis
+      | neque dolor quaerat aspernatur aliquid saepe et repudiandae
+      | magnam nulla natus explicabo officia ab placeat!
+  
+  //- ----------------------------
+  .btns-content.grid.gap-2
+    include ../big-button/_big-button-component.pug
+    include ../big-button/_big-button-component.pug
+    include ../big-button/_big-button-component.pug
+    include ../big-button/_big-button-component.pug
+  //- ----------------------------
+  .account-summary.grid
+    .tweets-conunt.flex.col.center
+      span 6,634
+      span count
+    .members-conunt.flex.col.center
+      span 4,532
+      span count
+  //- ----------------------------
+  .comunity-mods-content
+    h2.t-center Lorem, ipsum.
+    ul
+      li: a(href="#"): h3 @someone
+      li: a(href="#"): h3 @someone
+  //- ----------------------------
+  .theme-switcher-content.flex.not-distribute
+    h3 👁 Lorem, ipsum.
+    .switcher-content
+      input#isThemeOn(type="checkbox", name="isThemeOn").hidden
+      label(for="isThemeOn").switcher-btn.btn.round

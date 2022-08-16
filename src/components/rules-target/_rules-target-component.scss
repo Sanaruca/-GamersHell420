@@ -1,0 +1,35 @@
+.Rules-target {
+
+  .rues-content>ol>li {
+
+    label {
+      padding: 1.3rem 1rem;
+      justify-content: space-between;
+
+      &::after {
+        content: '\276F';
+        font-size: 1.5em;
+        transition: ease-in-out .2s;
+      }
+    }
+
+    .rule-description-content {
+      max-height: 0;
+      overflow: hidden;
+      // background-color: rebeccapurple;
+      transition: all .2s;
+    }
+
+    input:checked {
+      +label::after{
+        transform: rotate(90deg);
+      }
+
+      ~.rule-description-content {
+        max-height: 100vh;
+        padding: 1rem 2rem 1rem;
+      }
+    }
+
+  }
+}

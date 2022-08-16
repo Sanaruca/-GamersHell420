@@ -16,10 +16,18 @@
 
 
   #tweet-input {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     padding: 1.3rem 1rem;
     width: 100%;
     border-radius: 1rem;
+    transition: all .2s;
+    resize: none;
+    min-height: 3em;
+    
+    &:focus{
+      font-size: 2rem;
+      min-height: calc(3em * 3);
+    }
   }
 
   .btns-content {

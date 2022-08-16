@@ -379,10 +379,18 @@ textarea:focus, input:focus {
           flex: 8;
 }
 .Post-bar #tweet-input {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   padding: 1.3rem 1rem;
   width: 100%;
   border-radius: 1rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  resize: none;
+  min-height: 3em;
+}
+.Post-bar #tweet-input:focus {
+  font-size: 2rem;
+  min-height: 9em;
 }
 .Post-bar .btns-content {
   margin-top: 2rem;

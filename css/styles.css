@@ -227,6 +227,9 @@ textarea:focus, input:focus {
 .Tweet-target .teewt-content .posted-by {
   font-size: 0.9em;
 }
+.Tweet-target .teewt-content .teewt-text-content {
+  font-size: 1.3em;
+}
 .Tweet-target .user-image-content {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -243,8 +246,10 @@ textarea:focus, input:focus {
           justify-content: space-between;
   margin: 2rem 0;
 }
-.Tweet-target .teewt-reactions-content .main-reactions-content {
-  gap: 2rem;
+.Tweet-target .teewt-reactions-content .main-reactions-content * {
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
 }
 .Tweet-target .reaction-btns-content {
   gap: 1rem;
@@ -255,6 +260,51 @@ textarea:focus, input:focus {
 .Tweet-target .reaction-btns-content .r-action-btns-content,
 .Tweet-target .reaction-btns-content .large-btns-content {
   gap: 1rem;
+}
+
+.Comments-section {
+  min-height: 10rem;
+  margin-top: 3rem;
+  padding-top: 2rem;
+}
+.Comments-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 1px;
+  background-color: var(--color-3);
+  width: 100%;
+}
+.Comments-section .user-account-comment-bar-content {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.Comments-section .user-account-comment-bar-content .user-image {
+  height: 4rem;
+  width: 4rem;
+}
+.Comments-section .user-account-comment-bar-content .form-control {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.Comments-section .user-comment-content .comment-action-btns-content {
+  margin-top: 2rem;
+}
+.Comments-section .user-comment-content .comment-action-btns-content .r-action-btn {
+  cursor: pointer;
+}
+.Comments-section .user-comment-content .comment-action-btns-content .reply-btn {
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+}
+.Comments-section .user-comment-content .comment-action-btns-content .reply-btn::before {
+  content: "●";
+  position: absolute;
+  left: -0.5rem;
+  color: var(--color-3);
 }
 
 .Comunity-display {

@@ -33,8 +33,20 @@
   .user-comment-content{
 
     .comment-action-btns-content{
+      margin-top: 2rem;
+
+      .r-action-btn{
+        cursor: pointer;
+      }
+
       .reply-btn{
         min-width: max-content;
+        &::before{
+          content: '●';
+          position: absolute;
+          left: -.5rem;
+          color: var(--color-3)
+        }
       }
     }
   }

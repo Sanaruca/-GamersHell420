@@ -1,0 +1,86 @@
+.Poll-popup {
+  background-color: red;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  transition: cubic-bezier(0, 0, 0, 1) .3s;
+
+  background: #000000ab;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.2px);
+  -webkit-backdrop-filter: blur(9.2px);
+
+
+  form {
+    max-width: 55rem;
+    max-height: 45rem;
+    overflow: auto;
+
+    .quit-btn {
+      font-size: 1.3em;
+      right: 1rem;
+      z-index: 100;
+      padding: 0rem 1rem;
+      transition: color .1s;
+
+      &:hover {
+        color: inherit;
+      }
+    }
+
+
+    //------------------------
+    input#showHiddenAnwers:checked {
+
+
+      ~.add-answer-btn::after {
+        content: 'Restore';
+      }
+
+      ~.add-answer-btn::before {
+        content: '⨯';
+      }
+
+      ~.other-anwers-content {
+        max-height: 100vh;
+        overflow: initial;
+
+        .form-group {
+          padding-bottom: 2rem;
+        }
+
+      }
+    }
+
+    .other-anwers-content {
+      max-height: 0;
+      transition: all 1s;
+      overflow: hidden;
+
+      .form-group {
+        padding-bottom: 0;
+      }
+
+    }
+
+    //-------
+
+    .add-answer-btn {
+      align-self: flex-start;
+
+      &::before {
+        content: '+';
+        font-size: 1.2em;
+        margin-right: 1rem;
+      }
+
+      &::after {
+        content: 'Add More Answer';
+      }
+    }
+
+    //------------------------
+  }
+}

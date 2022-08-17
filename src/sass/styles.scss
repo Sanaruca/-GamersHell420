@@ -22,6 +22,8 @@
 
 @use '../components/management-target/_management-target-component.scss';
 
+// Poll-popup
+@use '../components/poll-popup/_poll-popup-component.scss';
 
 :root{
   --color-primary: #46B8DF;

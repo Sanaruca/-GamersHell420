@@ -1,0 +1,41 @@
+.Poll-popup.fixed.flex.center
+  form(action="" method="post").target.flex.col.gap-2
+    label(for="isPopupVisible").quit-btn.absolute.btn.t-color-3 ⨯
+    h3.t-center Create a poll
+    .form-group
+      label(for="subject") Question / Subject
+      .form-control
+        input#subject(type="text" name="subject" placeholder="hola").bg-3
+    //- anwer
+    .form-group
+      label(for="answer-1") answer-1
+      .form-control
+        input#answer-1(type="text" name="answer-1" placeholder="hola").bg-3
+    //- anwer
+    .form-group
+      label(for="answer-2") answer-2
+      .form-control
+        input#answer-2(type="text" name="answer-1" placeholder="hola").bg-3
+    //---------------------------------------------      
+    input#showHiddenAnwers(type="checkbox").hidden
+    //---------------------------------------------      
+    //- hidden answers content ---------------------------------------
+    .other-anwers-content.flex.col
+      //- anwe
+        .form-control
+          input#answer-3(type="text" name="answer-3" placeholder="hola").bg-3
+      .form-group
+        label(for="answer-4") answer-4r
+      .form-group
+        label(for="answer-3") answer-3
+        .form-control
+          input#answer-4(type="text" name="answer-4" placeholder="hola").bg-3
+      .form-group
+        label(for="answer-5") answer-5
+        .form-control
+          input#answer-5(type="text" name="answer-5" placeholder="hola").bg-3
+    //---------------------------------------------      
+    label(for="showHiddenAnwers").add-answer-btn.btn.wb.t-color-3
+    //---------------------------------------------      
+    .form-group
+      .btn.bg-primary.round Post Poll

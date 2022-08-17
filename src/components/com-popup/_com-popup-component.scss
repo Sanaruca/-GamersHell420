@@ -1,0 +1,31 @@
+.Com-poppup {
+  // background-color: aquamarine;
+  padding: 1rem;
+  max-width: 65rem;
+
+  .img-content {
+    height: 7rem;
+    width: 7rem;
+    margin: auto;
+  }
+
+  .com-display-text {
+    justify-content: space-between;
+  }
+
+  .com-content {
+    // background-color: burlywood;
+    grid-template: auto / repeat(2, 30rem);
+    justify-content: space-between;
+  }
+
+  .continue-btn.btn.round{
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(90deg, #f36b79, #fcb575);
+    min-width: 12rem;
+    max-width: 50%;
+    margin: 2rem auto 0;
+
+  }
+}

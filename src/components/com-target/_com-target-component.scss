@@ -1,0 +1,27 @@
+.Com-target {
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 2rem;
+  border-radius: 0.8rem;
+  
+
+  .com-image {
+    height: 4rem;
+    width: 4rem;
+  }
+
+
+  .com-detail-cotent>* {
+    margin: 0;
+
+    &.com-name {
+      font-size: .9em;
+      color: #5e5e5e;
+    }
+
+
+    &.com-members-count {
+      font-weight: bold;
+    }
+  }
+}

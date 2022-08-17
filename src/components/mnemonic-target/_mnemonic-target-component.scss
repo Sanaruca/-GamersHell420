@@ -1,0 +1,20 @@
+.Mnemonic-target {
+  min-height: 10rem;
+  min-width: 10rem;
+  max-width: 80vw;
+  padding-bottom: 5rem;
+
+  h2{
+    margin-top: 4rem;
+  }
+
+  form {
+    max-width: 50rem;
+    margin: auto;
+
+
+    .confirm-btn{
+      max-width: 12rem;
+    }
+  }
+}

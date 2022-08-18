@@ -1,5 +1,32 @@
 extends _layout.pug
 
 block content
-  main.flex.center
-    include ../components/com-popup/_com-popup-component.pug
+  include ../components/nav-bar/_nav-bar-component.pug
+  main.Main-dash-board.grid
+    section.main.flex.col.nd
+      // tweets
+      include ../components/tweet-target/_tweet-target-component.pug
+
+    //- left
+    section.side-bar-l.flex.col.nd
+      include ../components/user-target/_user-target-component.pug
+      include ../components/comunity-target/_comunity-target-component.pug
+      //- Big buttons
+      include ../components/big-button/_big-button-component.pug
+      include ../components/big-button/_big-button-component.pug
+
+
+    //- rigth
+    section.side-bar-r.flex.col.nd
+      //- Advertisement
+      include ../components/advertisement/_advertisement-component.pug
+
+      //- rules target
+      include ../components/rules-target/_rules-target-component.pug
+
+      //- Advertisement
+      include ../components/advertisement/_advertisement-component.pug
+      
+      //- Management-target
+      include ../components/management-target/_management-target-component.pug
+  

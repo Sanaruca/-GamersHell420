@@ -1,0 +1,43 @@
+.Tweet-target.target
+  //- 
+  //- option-button
+  include ../option-button/_option-button-component.pug
+  //- 
+  .teewt-data.flex
+    .user-image-content
+      .user-image.circle
+    .teewt-content
+      h4 usuario del tweet
+      p.posted-by.t-color-3 posted by @someone ● 32 minutes ago 🖼🔒
+      .teewt-text-content.flex.col.gap-2
+        p.t-center Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis assumenda non praesentium quae dignissimos, ipsam exercitationem est quos officia inventore vel cumque libero commodi modi in, molestiae quibusdam ab necessitatibus!
+        p.t-center Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis assumenda non praesentium quae dignissimos, ipsam exercitationem est quos officia inventore vel cumque libero commodi modi in, molestiae quibusdam ab necessitatibus!
+        p.t-center Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis assumenda non praesentium quae dignissimos, ipsam exercitationem est quos officia inventore vel cumque libero commodi modi in.
+      .teewt-reactions-content.flex.nd
+        .main-reactions-content.flex.gap-2
+          .teewt-likes-count-content
+            span 👍 213
+          .teewt-shared-count-content
+            span ↻ 124
+          .teewt-custom-count-content
+            span ◍ 2
+          .teewt-custom-count-content
+            span 🧞‍♂️ 124
+        .teewt-comments-count-content.mintext.t-color-3
+          span 45 Comments
+  //- ------------------
+  .reaction-btns-content.flex.nd
+    //- up and down 
+    .r-action-btns-content.flex
+      .r-action-btn.btn.bg-3 ▲
+      .r-action-btn.btn.bg-3 ▼
+    //-ribbon btn
+    .r-action-btn.btn.bg-3 🥇
+    //- retweet and comment
+    .large-btns-content.flex
+      .btn.large.bg-3 ↻ Retweet
+      .btn.large.bg-3 💬 comment
+    //- export btn
+    .r-action-btn.btn.bg-3 ▢
+  //- ------------------
+  include ../comments-section/_comments-section-component.pug

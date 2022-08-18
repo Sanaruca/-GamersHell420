@@ -1,38 +1,22 @@
-.User-target.flex.col.target.gap-2
+.User-target.flex.col.target
   .user-front-page-image.absolute
   .user-data-content.flex.nd.col.center
     .user-image.circle
-    //- user = comunity
-    span.user-name comunityname
-    span.t-color-3.user-description.mintext.t-center
-      | Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-      | Totam ducimus distinctio mollitia doloribus ea, blanditiis
-      | neque dolor quaerat aspernatur aliquid saepe et repudiandae
-      | magnam nulla natus explicabo officia ab placeat!
-  
-  //- ----------------------------
-  .btns-content.grid.gap-2
-    include ../big-button/_big-button-component.pug
-    include ../big-button/_big-button-component.pug
-    include ../big-button/_big-button-component.pug
-    include ../big-button/_big-button-component.pug
-  //- ----------------------------
+      //- img(src="https://www.nationalworld.com/jpim-static/image/2022/07/08/16/who-is-the-richest-person-in-the-world-2022-elon-musk.jpg?width=240&quality=65&smart" alt="alt")
+    span.user-name @some
+    span.t-color-3.user-karma karma -123
+    span.t-color-3.user-member-since member-since some
+    //- ----------------------------
   .account-summary.grid
     .tweets-conunt.flex.col.center
       span 6,634
       span count
-    .members-conunt.flex.col.center
+    .comments-conunt.flex.col.center
+      span 9,991
+      span count
+    .folowing-conunt.flex.col.center
+      span 5,253
+      span count
+    .folowers-conunt.flex.col.center
       span 4,532
       span count
-  //- ----------------------------
-  .comunity-mods-content
-    h2.t-center Lorem, ipsum.
-    ul
-      li: a(href="#"): h3 @someone
-      li: a(href="#"): h3 @someone
-  //- ----------------------------
-  .theme-switcher-content.flex.nd
-    h3 👁 Lorem, ipsum.
-    .switcher-content
-      input#isThemeOn(type="checkbox", name="isThemeOn").hidden
-      label(for="isThemeOn").switcher-btn.btn.round

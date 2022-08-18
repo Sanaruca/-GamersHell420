@@ -46,4 +46,20 @@
 
   }
 
+  //******************
+  //- Poll-popup
+  //******************
+  input#isPopupVisible:checked{
+    +.Poll-popup{
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .Poll-popup{
+    transform: scale(0);
+    opacity: 0;
+  }
+
+
 }

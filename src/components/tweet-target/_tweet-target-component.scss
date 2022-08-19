@@ -1,7 +1,7 @@
 .Tweet-target {
   // background-color: #339949;
 
-  .Option-button{
+  .Option-button {
     position: absolute;
     z-index: 100;
     right: 1rem; // target apdding
@@ -14,8 +14,8 @@
 
   .teewt-content {
     flex: 8;
-    
-    .posted-by{
+
+    .posted-by {
       font-size: .9em;
     }
   }
@@ -36,6 +36,10 @@
 
     .main-reactions-content {
       gap: 2rem;
+
+      >* {
+        min-width: max-content;
+      }
     }
   }
 

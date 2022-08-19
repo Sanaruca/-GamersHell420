@@ -38,19 +38,19 @@
     // .......................
     input#showPanelButons:checked {
       +.panel-btns-content {
-        left: calc(0rem - 2rem); // of nav padding
+        right: 0% // of nav padding
       }
 
     }
 
     // .......................
     .panel-btns-content {
-      background-color: cadetblue;
-      position: absolute;
-      transition: cubic-bezier(0, 0, 0, 1) 0.4s;
+      background-color: var(--color-2);
+      position: fixed;
+      transition: cubic-bezier(0, 0, 0, 1) 0.3s;
       // left: calc(0rem - 2rem); // of nav padding
-      left: calc(-100vw - 8rem); // 👁 eye%
-      top: 100%;
+      right: calc(-100% - 2rem);
+      top: 5.2rem;
       padding: 6rem; // 👁 eye%
       min-height: 100vh;
       width: calc(100vw); // 👁 eye%
@@ -61,6 +61,10 @@
 
     .user-account-dropdown-content {
       display: flex;
+
+      &::after{
+        display: none;
+      }
     }
 
     .showmore-btn {
@@ -70,11 +74,27 @@
 
   @media screen and (max-width: 480px) {
     .user-account-dropdown-content {
-      min-width: max-content;
+      min-width: max-content !important; // fast solution
+      
+      &::after, &::before{
+        display: none;
+
+      }
 
       >*:not(.user-image) {
         display: none;
       }
+    }
+  }
+
+  @media screen and (max-width: 380px) {
+
+    label[for="showSeachBar"]{
+      display: initial;
+    }
+
+    .seach-bar-content{
+      display: none;
     }
   }
 

@@ -82,7 +82,7 @@
 
       }
 
-      >*:not(.user-image) {
+      >*:not(.user-image, .panel-links-content) {
         display: none;
       }
     }

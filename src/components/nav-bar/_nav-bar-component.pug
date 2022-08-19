@@ -1,18 +1,23 @@
-nav.Nav-bar.flex.center
+nav.Nav-bar.flex.center.gap-2.nd
   .page-logo-content
+  //- .............
+  label(for="showPanelButons").btn.hidden: i.material-symbols-outlined sort
+  //- .............
   .seach-bar-content.flex.center
     .form-control
       input(type="text" placeholder="# explore").target
   .other.flex.nd.center
     //- .............
-    .panel-btns-content.flex
+    input#showPanelButons(type="checkbox", name="showPanelButons").hidden
+    //- .............
+    .panel-btns-content.flex.nd
       a(href="#").home-link.btn.round 🏠 Home
       .notifications-content.flex.center
         .ford-points-btn.btn ....
         .messages-btn.btn ✉
         .notifications-btn.btn 🔔
     //- .............
-    .user-account-dropdown-content.btn.mintext.bg-3.round.flex.center.nd
+    .user-account-dropdown-content.btn.mintext.bg-3.round.flex.center.nd.gap-1
       .user-image.circle
       span @Admin
     //- .............

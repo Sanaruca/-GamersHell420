@@ -1,7 +1,7 @@
 .Nav-bar {
   // background-color: blueviolet;
   margin-bottom: 3rem;
-
+  justify-content: space-between;
   background: #07131f;
   margin-bottom: 3rem;
   position: fixed;
@@ -12,9 +12,76 @@
   left: 0;
   padding: 1rem 2rem 0.2rem;
 
+  @media screen and (max-width: 960px) {
+    .page-logo-content {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    background-color: #283440;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    // .......................
+    label[for="showPanelButons"] {
+      display: initial;
+      max-width: max-content;
+
+      i {
+        transform: rotateY(180deg)
+      }
+    }
+
+    // .......................
+
+    // .......................
+    input#showPanelButons:checked {
+      +.panel-btns-content {
+        left: calc(0rem - 2rem); // of nav padding
+      }
+
+    }
+
+    // .......................
+    .panel-btns-content {
+      background-color: cadetblue;
+      position: absolute;
+      transition: cubic-bezier(0, 0, 0, 1) 0.4s;
+      // left: calc(0rem - 2rem); // of nav padding
+      left: calc(-100vw - 8rem); // 👁 eye%
+      top: 100%;
+      padding: 6rem; // 👁 eye%
+      min-height: 100vh;
+      width: calc(100vw); // 👁 eye%
+      flex-flow: column;
+    }
+
+    // .......................
+
+    .user-account-dropdown-content {
+      display: flex;
+    }
+
+    .showmore-btn {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .user-account-dropdown-content {
+      min-width: max-content;
+
+      >*:not(.user-image) {
+        display: none;
+      }
+    }
+  }
+
 
   .seach-bar-content .form-control {
     max-width: 25rem;
+    min-width: 18rem;
   }
 
 
@@ -48,7 +115,7 @@
     .user-account-dropdown-content {
       min-width: 15rem;
       justify-content: start;
-      gap: 1rem;
+      padding: 0.5rem;
 
       &::after {
         content: '▼';
@@ -87,4 +154,7 @@
     }
 
   }
+
+
+  
 }

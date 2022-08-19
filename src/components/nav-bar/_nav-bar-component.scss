@@ -59,10 +59,10 @@
 
     // .......................
 
-    .user-account-dropdown-content {
+    .User-account-dropdown {
       display: flex;
 
-      &::after{
+      &::after {
         display: none;
       }
     }
@@ -73,10 +73,11 @@
   }
 
   @media screen and (max-width: 480px) {
-    .user-account-dropdown-content {
+    .User-account-dropdown {
       min-width: max-content !important; // fast solution
-      
-      &::after, &::before{
+
+      &::after,
+      &::before {
         display: none;
 
       }
@@ -89,11 +90,11 @@
 
   @media screen and (max-width: 380px) {
 
-    label[for="showSeachBar"]{
+    label[for="showSeachBar"] {
       display: initial;
     }
 
-    .seach-bar-content{
+    .seach-bar-content {
       display: none;
     }
   }
@@ -132,34 +133,6 @@
 
     }
 
-    .user-account-dropdown-content {
-      min-width: 15rem;
-      justify-content: start;
-      padding: 0.5rem;
-
-      &::after {
-        content: '▼';
-        color: #fff;
-        position: absolute;
-        right: 1rem; //pading
-      }
-
-      &::before {
-        content: "";
-        position: absolute;
-        background-color: #283440;
-        width: 1px;
-        height: 80%;
-        left: -1.4rem;
-      }
-
-      .user-image {
-        background-color: aquamarine;
-        height: 3rem;
-        width: 3rem;
-      }
-    }
-
     .showmore-btn {
       height: 5rem;
       width: 5rem;
@@ -176,5 +149,5 @@
   }
 
 
-  
+
 }

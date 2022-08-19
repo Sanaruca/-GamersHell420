@@ -1,0 +1,27 @@
+.User-account-dropdown {
+  min-width: 15rem;
+  justify-content: start;
+  padding: 0.5rem;
+
+  &::after {
+    content: '▼';
+    color: #fff;
+    position: absolute;
+    right: 1rem; //pading
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: #283440;
+    width: 1px;
+    height: 80%;
+    left: -1.4rem;
+  }
+
+  .user-image {
+    background-color: aquamarine;
+    height: 3rem;
+    width: 3rem;
+  }
+}

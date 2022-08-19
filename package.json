@@ -3,6 +3,6 @@
     "build": "concurrently \"npm:build:html\" \"npm:build:css\"",
     "build:html": "pug ./src/views --out ./build -P",
     "build:css": "sass src/sass/styles.scss build/css/styles.css",
-    "watch:pug": "pug ./src/views --out ./build -P -w"
+    "watch:pug": "pug ./src/views --out ./build -w"
   }
 }

@@ -11,6 +11,10 @@
   }
 }
 
+.wrap{
+  flex-wrap: wrap;
+}
+
 .gap-1 {
   gap: 1rem;
 }
@@ -47,6 +51,7 @@
   align-items: center;
   border-radius: 1rem;
   cursor: pointer;
+  min-width: max-content;
 
   &.wb {
     // with border

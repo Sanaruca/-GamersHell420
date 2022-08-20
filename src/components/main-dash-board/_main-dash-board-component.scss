@@ -2,28 +2,61 @@
   // background-color: black;
   min-height: 100vh;
   grid-template-columns: minmax(25rem, 1fr) 68rem minmax(25rem, 1fr);
-  grid-template-rows: auto;
+  // grid-template-rows: auto;
   gap: 1rem;
   grid-template-areas: 'l content r';
   margin-top: 8rem;
 
 
-  .main, .side-bar-l, .side-bar-r{
+  .main,
+  .side-bar-l,
+  .side-bar-r {
     gap: 2rem;
   }
 
 
-  .main{
+  .main {
     grid-area: content;
   }
-  
-  .side-bar-l{
+
+  .side-bar-l {
     grid-area: l;
-    
+
   }
-  
-  .side-bar-r{
+
+  .side-bar-r {
     grid-area: r;
+  }
+
+
+
+  @media screen and (max-width: 1250px) {
+    grid-template-columns: minmax(25rem, 1fr) 55rem minmax(25rem, 1fr);
+  }
+
+
+  @media screen and (max-width: 1136px) {
+    grid-template-columns: repeat(auto-fill, minmax(calc(100vw - 4rem), 1fr)); // 4rem of paddong
+    grid-template-areas: none;
+
+    .main {
+      margin: auto;
+      max-width: 74rem;
+    }
+
+
+    .main,
+    .side-bar-l,
+    .side-bar-r {
+      grid-area: auto;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .main {
+      margin: auto;
+      max-width: 40rem;
+    }
   }
 
 }

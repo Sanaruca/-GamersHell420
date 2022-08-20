@@ -1,14 +1,16 @@
-:root{
+:root {
   --color-primary: #46B8DF;
+  --color-1: #07131F;
   --color-2: #1A2632;
   --color-3: #283440;
 }
 
 body {
   padding: 2rem;
-  background-color: #07131F;
+  background-color: var(--color-1);
   color: #E4EBF2;
   font-family: Mukta, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  max-width: calc(132.8rem + 2rem) // of padding
 }
 
 
@@ -17,10 +19,11 @@ body {
   font-size: .8em;
 }
 
-.primary{
+.primary {
   color: var(--color-primary)
 }
-.warnig{
+
+.warnig {
   color: #ff583e
 }
 
@@ -66,21 +69,75 @@ input[type="text"] {
   color: inherit;
 }
 
-.form-control> 
-input[type="text"] {
+.form-control>input[type="text"] {
   width: 100%;
 }
 
 // dev only
-.user-image{
+.user-image {
   background: url(https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=260&h=750&dpr=1);
   background-size: cover;
+
+  &.s-1{
+    width: 7rem;
+    height: 7rem;
+    
+  }
+  &.s-2{
+    width: 5rem;
+    height: 5rem;
+  }
+
+  &.s-3{
+    width: 4rem;
+    height: 4rem;
+  }
+
+  &.s-4{
+    width: 3rem;
+    height: 3rem;
+  }
+
 }
 
 // ..................................
 
-// @media screen and (max-width: 480px) {
-//   body{
-//     padding: 1rem;
-//   }
-// }
+@media screen and (max-width: 768px) {
+  .btn.large {
+    min-width: 15rem;
+  }
+}
+@media screen and (max-width: 640px) {
+  .btn.large {
+    min-width: 12rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  body {
+    padding: 0;
+  }
+
+  .target {
+    border-radius: 0;
+  }
+
+  .user-image{
+    &.s-1{
+      width: 5rem;
+      height: 5rem;
+      
+    }
+    &.s-2{
+      width: 4rem;
+      height: 4rem;
+      
+    }
+  }
+}

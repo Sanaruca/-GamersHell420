@@ -4,8 +4,6 @@
 
 
   .user-image {
-    height: 5rem;
-    width: 5rem;
     background-color: #46B8DF;
   }
 
@@ -46,17 +44,28 @@
   //******************
   //- Poll-popup
   //******************
-  input#isPopupVisible:checked{
-    +.Poll-popup{
+  input#isPopupVisible:checked {
+    +.Poll-popup {
       transform: scale(1);
       opacity: 1;
     }
   }
-  
-  .Poll-popup{
+
+  .Poll-popup {
     transform: scale(0);
     opacity: 0;
   }
 
+  // ..............................................
+  @media screen and (max-width: 480px) {
+    .btns-content {
+      gap: 1rem;
+    }
+  }
+  @media screen and (max-width: 440px) {
+    .btns-content {
+      gap: 1rem;
+    }
+  }
 
 }

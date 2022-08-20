@@ -11,7 +11,7 @@
   }
 }
 
-.wrap{
+.wrap {
   flex-wrap: wrap;
 }
 
@@ -30,6 +30,10 @@
 .center {
   justify-content: center;
   align-items: center;
+}
+
+.m-a{ // margin auto
+  margin: auto;
 }
 
 .col {
@@ -61,7 +65,7 @@
 
   &.large {
     // background-color: royalblue;
-    width: 20rem;
+    min-width: 18rem;
   }
 }
 

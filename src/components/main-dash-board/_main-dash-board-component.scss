@@ -8,13 +8,6 @@
   margin-top: 8rem;
 
 
-  .main,
-  .side-bar-l,
-  .side-bar-r {
-    gap: 2rem;
-  }
-
-
   .main {
     grid-area: content;
   }
@@ -44,18 +37,28 @@
       max-width: 74rem;
     }
 
-
     .main,
     .side-bar-l,
     .side-bar-r {
       grid-area: auto;
     }
+
+    .side-bar-l,
+    .side-bar-r {
+      display: none;
+    }
+
   }
 
   @media screen and (max-width: 480px) {
     .main {
       margin: auto;
-      max-width: 40rem;
+      max-width: initial;
+    }
+  }
+  @media screen and (max-width: 460px) {
+    .main {
+      gap: 1rem
     }
   }
 

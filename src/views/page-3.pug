@@ -3,7 +3,7 @@ extends _layout.pug
 block content
   include ../components/nav-bar/_nav-bar-component.pug
   main.Main-dash-board.grid
-    section.main.flex.col.nd
+    section.main.flex.col.nd.gap-2
       include ../components/post-bar/_post-bar-component.pug
       // tweets
       include ../components/tweet-target/_tweet-target-component.pug
@@ -12,7 +12,7 @@ block content
       include ../components/tweet-target/_tweet-target-component.pug
 
     //- left
-    section.side-bar-l.flex.col.nd
+    section.side-bar-l.flex.col.nd.gap-2
       include ../components/comunity-detail-target/_comunity-detail-target-component.pug
       include ../components/comunity-target/_comunity-target-component.pug
       //- Big buttons
@@ -21,7 +21,7 @@ block content
 
 
     //- rigth
-    section.side-bar-r.flex.col.nd
+    section.side-bar-r.flex.col.nd.gap-2
       //- Advertisement
       include ../components/advertisement/_advertisement-component.pug
 

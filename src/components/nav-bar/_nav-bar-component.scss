@@ -12,6 +12,51 @@
   left: 0;
   padding: 1rem 2rem 0.2rem;
 
+  .seach-bar-content .form-control {
+    max-width: 25rem;
+    min-width: 18rem;
+  }
+
+  // other
+
+  .other {
+    gap: 2rem;
+    justify-content: end;
+
+
+    .panel-btns-content {
+      gap: 2rem;
+    }
+
+    .home-link {
+      background-color: #fff;
+      color: #000;
+      min-width: max-content;
+    }
+
+
+    .notifications-content {
+
+      gap: 1rem;
+
+    }
+
+    .showmore-btn {
+      height: 5rem;
+      width: 5rem;
+      // background-color: red;
+    }
+
+    .ford-points-btn,
+    .messages-btn,
+    .notifications-btn,
+    .showmore-btn {
+      background-color: transparent;
+    }
+
+  }
+
+
   @media screen and (max-width: 960px) {
     .page-logo-content {
       display: none;
@@ -73,6 +118,8 @@
   }
 
   @media screen and (max-width: 480px) {
+    padding: 1rem 1rem 0.2rem;
+
     .User-account-dropdown {
       min-width: max-content !important; // fast solution
 
@@ -99,54 +146,6 @@
     }
   }
 
-
-  .seach-bar-content .form-control {
-    max-width: 25rem;
-    min-width: 18rem;
-  }
-
-
-
-  // other
-
-  .other {
-    gap: 2rem;
-    justify-content: end;
-
-
-    .panel-btns-content {
-      gap: 2rem;
-    }
-
-    .home-link {
-      background-color: #fff;
-      color: #000;
-      min-width: max-content;
-    }
-
-
-
-
-    .notifications-content {
-
-      gap: 1rem;
-
-    }
-
-    .showmore-btn {
-      height: 5rem;
-      width: 5rem;
-      // background-color: red;
-    }
-
-    .ford-points-btn,
-    .messages-btn,
-    .notifications-btn,
-    .showmore-btn {
-      background-color: transparent;
-    }
-
-  }
 
 
 

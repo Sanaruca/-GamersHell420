@@ -1,7 +1,7 @@
 .Com-poppup {
   // background-color: aquamarine;
   padding: 1rem;
-  max-width: 65rem;
+  max-width: 70rem;
 
   .img-content {
     height: 7rem;
@@ -11,21 +11,42 @@
 
   .com-display-text {
     justify-content: space-between;
+
+    @media screen and (max-width: 669px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   .com-content {
     // background-color: burlywood;
-    grid-template: auto / repeat(2, 30rem);
+    grid-template: auto / repeat(auto-fill, minmax(25rem, 30rem));
     justify-content: space-between;
+
   }
 
-  .continue-btn.btn.round {
+  .continue-btn {
     font-weight: bold;
     color: #fff;
     background: linear-gradient(90deg, var(--color-primary), #5978bf);
-    min-width: 12rem;
+    min-width: 20rem;
     max-width: 50%;
     margin: 2rem auto 0;
 
   }
+
+
+  @media screen and (max-width: 669px) {
+
+    .com-display-text {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .com-content {
+      justify-content: center;
+    }
+  }
+
+
 }

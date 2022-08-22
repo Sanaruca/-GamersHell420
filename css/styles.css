@@ -47,6 +47,46 @@ textarea:focus, input:focus {
   gap: 3rem;
 }
 
+.js-c {
+  justify-content: center;
+}
+
+.js-sb {
+  justify-content: space-between;
+}
+
+.js-sa {
+  justify-content: space-around;
+}
+
+.js-s {
+  justify-content: start;
+}
+
+.js-e {
+  justify-content: end;
+}
+
+.al-c {
+  align-items: center;
+}
+
+.al-sb {
+  align-items: space-between;
+}
+
+.al-sa {
+  align-items: space-around;
+}
+
+.al-s {
+  align-items: start;
+}
+
+.al-e {
+  align-items: end;
+}
+
 .center {
   justify-content: center;
   align-items: center;
@@ -122,6 +162,10 @@ body {
   color: #E4EBF2;
   font-family: Mukta, "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   max-width: 134.8rem;
+}
+
+.material-symbols-outlined.fill {
+  font-variation-settings: "FILL" 1;
 }
 
 .mintext {
@@ -441,6 +485,19 @@ input[type=text] {
 .Comunity-target .comunyties-content {
   margin: 2rem 0;
   gap: 2rem;
+}
+
+.Create-comunity span.r-name {
+  z-index: 100;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.Create-comunity input[name=name] {
+  padding-left: 2.5rem;
+}
+.Create-comunity .community-type-content {
+  margin: 2rem 0;
 }
 
 .Main-dash-board {

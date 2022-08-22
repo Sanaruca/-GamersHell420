@@ -1,0 +1,34 @@
+extends _layout.pug
+
+block content
+
+  include ../components/nav-bar/_nav-bar-component.pug
+
+  main.Main-dash-board.grid
+    section.main.flex.col.nd.gap-2
+      include ../components/create-comunity/_create-comunity.pug
+      
+    //- left
+    section.side-bar-l.flex.col.nd.gap-2
+      include ../components/user-target/_user-target-component.pug
+      include ../components/comunity-target/_comunity-target-component.pug
+      //- Big buttons
+      include ../components/big-button/_big-button-component.pug
+      include ../components/big-button/_big-button-component.pug
+
+
+    //- rigth
+    section.side-bar-r.flex.col.nd.gap-2
+      //- Advertisement
+      include ../components/advertisement/_advertisement-component.pug
+
+      //- trens target
+      include ../components/trends-target/_trends-target-component.pug
+
+      //- Advertisement
+      include ../components/advertisement/_advertisement-component.pug
+
+      //- Big buttons
+      include ../components/big-button/_big-button-component.pug
+      include ../components/big-button/_big-button-component.pug
+

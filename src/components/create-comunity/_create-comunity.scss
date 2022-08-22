@@ -1,0 +1,18 @@
+.Create-comunity {
+
+  // ........................
+  span.r-name {
+    z-index: 100;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  input[name="name"] {
+    padding-left: 2.5rem;
+  }
+  // ........................
+
+  .community-type-content{
+    margin: 2rem 0;
+  }
+}

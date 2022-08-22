@@ -1,0 +1,30 @@
+.Create-comunity.target
+  h1.t-center Create a New Comunity
+  p Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+    | Doloremque illum ipsa cum voluptatibus nesciunt illo 
+    | voluptatem neque suscipit perferendis, aspernatur distinctio 
+    | dignissimos ut et corrupti quae est iure porro perspiciatis.
+  form(name="create-comunity-form")
+    h3 Name
+    p.mintext.t-color-3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, fuga!
+    .form-group
+      label(for="") Title *
+      .form-control: input(type="text", placeholder="lorem").bg-3
+    .form-group
+      label(for="") Name *
+      .form-control
+        span.r-name.mintext.t-color-3.absolute r/
+        input(type="text", placeholder="lorem", name="name").bg-3
+      span.mintext.t-color-3 Lorem ipsum dolor sit amet consectetur.
+    .form-group.community-type-content
+      label Comunuty Type
+      .radio-group.flex.col.gap-1
+        .radio.flex.nd.gap-1
+          input#r1(type="radio" name="comunuty-type", checked)
+          label(for="r1").flex.nd.al-c.gap-1 #[i.material-symbols-outlined.fill person] Public #[span.mintext.t-color-3 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, officia.]
+        .radio.flex.nd.gap-1
+          input#r2(type="radio" name="comunuty-type")
+          label(for="r2").flex.nd.al-c.gap-1 #[i.material-symbols-outlined.fill lock] Private #[span.mintext.t-color-3 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, officia.]
+    .btns-content.flex.gap-2.nd.js-e
+      .btn.round.wb Cancel
+      .btn.round.bg-primary Create Community

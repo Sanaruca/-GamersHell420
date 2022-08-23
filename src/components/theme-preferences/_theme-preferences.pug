@@ -1,0 +1,38 @@
+.Theme-preferences.target
+  h3 Menu
+  hr
+  .link-color-content
+    .flex
+      p Link Colors
+    .flex
+      p.t-color-3 Link
+      input#link-color(type="color", value="#EB0026")
+
+  .theme-color-content
+    h3 Theme Colors
+    .flex
+      p.t-color-3 Base
+      input#link-color(type="color", value="#359D47")
+    .flex
+      p.t-color-3 Highlight
+      input#link-color(type="color", value="#0179D2")
+  hr
+  .main-menu-color-content
+    h4 Main Menu Background
+      .flex
+        p.t-color-3 Color
+        input#link-color(type="color", value="#D9EFFD")
+  hr
+  .sub-menu-color-content
+    h4 Submenu Background
+    .radio-group
+      .radio.flex.nd.gap-1
+        input#r1(type="radio" name="submenu-background", checked)
+        label(for="r1").t-color-3.flex.nd.al-c.gap-1 Match Main Menu Background
+      .radio.flex.nd.gap-1
+        input#r2(type="radio" name="submenu-background")
+        label(for="r2").t-color-3.flex.nd.al-c.gap-1 Solid Color
+
+  .btns-content.flex.col.gap-1
+    .btn.round.bg-primary Save
+    .btn.round.wb Cancel

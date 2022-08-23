@@ -16,6 +16,10 @@ body {
   font-size: 1.6rem;
 }
 
+hr{
+  border: .05rem solid grey;
+}
+
 textarea:focus, input:focus{
   outline: none;
 }

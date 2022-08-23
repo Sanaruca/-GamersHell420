@@ -1,0 +1,20 @@
+.Theme-preferences {
+
+  .link-color-content,
+  .theme-color-content,
+  .main-menu-color-content,
+  .sub-menu-color-content {
+    margin: 1rem 0;
+  }
+
+
+  input[type="color"]{
+    appearance: none;
+    border: none;
+    background-color: transparent;
+
+    &::-webkit-color-swatch{
+      border: none;
+    }
+  }
+}

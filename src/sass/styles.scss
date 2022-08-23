@@ -25,6 +25,7 @@
 @use '../components/trends-target/trends-target-component';
 @use '../components/tweet-detail-target/tweet-detail-target-component';
 @use '../components/tweet-target/tweet-target-component';
+@use '../components/unmoderated-tweet-spam-target/_unmoderated-tweet-spam-target';
 @use '../components/unmoderated-tweet-target/_unmoderated-tweet-target';
 @use '../components/user-account-dropdown/user-account-dropdown';
 @use '../components/user-target/user-target-component';

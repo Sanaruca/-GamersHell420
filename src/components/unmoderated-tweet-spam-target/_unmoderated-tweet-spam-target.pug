@@ -1,0 +1,36 @@
+//- here I have decided to recycle
+.Unmoderated-tweet-spam-target.target.Unmoderated-tweet-target
+  //- 
+  //- option-button
+  include ../option-button/_option-button-component.pug
+  //- 
+  .teewt-data.flex.gap-1
+    .user-image-content
+      .user-image.s-2.circle
+    .teewt-content
+      h4 usuario del tweet
+      p.posted-by.t-color-3 posted by @someone ● 32 minutes ago 🖼🔒
+      p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, maiores!
+      .teewt-reactions-content.flex.nd
+        .main-reactions-content.flex
+          .teewt-likes-count-content
+            span 👍 213
+          .teewt-shared-count-content
+            span ↻ 124
+        .teewt-comments-count-content.mintext.t-color-3
+          span 45 Comments
+  //- ------------------
+  .reaction-btns-content.flex.nd.wrap
+    //- up and down 
+    .r-action-btns-content.flex.gap-1
+      .r-action-btn.btn.bg-3 ▲
+      .r-action-btn.btn.bg-3 ▼
+    //-ribbon btn
+    .r-action-btn.btn.bg-3 🥇
+    //- retweet and comment
+    .large-btns-content.flex.wrap.gap-1
+      .btn.large.bg-3 #[i.material-symbols-outlined check_circle] Approve
+      .btn.large.bg-3 #[i.material-symbols-outlined block] Remove
+      .btn.large.bg-3.warnig #[i.material-symbols-outlined disabled_by_default] spammed
+    //- export btn
+    .r-action-btn.btn.bg-3 ▢

@@ -1,0 +1,40 @@
+extends _layout.pug
+
+block content
+
+  include ../components/nav-bar/_nav-bar-component.pug
+
+  main.Main-dash-board.grid.js-c
+    section.main.flex.col.nd.gap-2
+      //- include ../components/post-bar/_post-bar-component.pug
+      // Unmoderated-tweets-spam
+      include ../components/unmoderated-tweet-spam-target/_unmoderated-tweet-spam-target.pug
+      include ../components/unmoderated-tweet-spam-target/_unmoderated-tweet-spam-target.pug
+      include ../components/unmoderated-tweet-spam-target/_unmoderated-tweet-spam-target.pug
+      include ../components/unmoderated-tweet-spam-target/_unmoderated-tweet-spam-target.pug
+      include ../components/unmoderated-tweet-spam-target/_unmoderated-tweet-spam-target.pug
+
+    //- left
+    section.side-bar-l.flex.col.nd.gap-2
+      include ../components/comunity-detail-target/_comunity-detail-target-component.pug
+      include ../components/comunity-target/_comunity-target-component.pug
+      //- Big buttons
+      include ../components/big-button/_big-button-component.pug
+      include ../components/big-button/_big-button-component.pug
+
+
+    //- rigth
+    section.side-bar-r.flex.col.nd.gap-2
+      //- Advertisement
+      include ../components/advertisement/_advertisement-component.pug
+
+      //- rules target
+      include ../components/rules-target/_rules-target-component.pug
+
+      //- Advertisement
+      include ../components/advertisement/_advertisement-component.pug
+
+      //- Management-target
+      include ../components/management-target/_management-target-component.pug
+
+

@@ -17,6 +17,10 @@ body {
   font-size: 1.6rem;
 }
 
+hr {
+  border: 0.05rem solid grey;
+}
+
 textarea:focus, input:focus {
   outline: none;
 }
@@ -162,6 +166,10 @@ body {
   color: #E4EBF2;
   font-family: Mukta, "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   max-width: 134.8rem;
+}
+
+hr {
+  border-color: var(--color-3);
 }
 
 .material-symbols-outlined.fill {
@@ -523,12 +531,8 @@ input[type=text] {
 }
 @media screen and (max-width: 1136px) {
   .Main-dash-board {
-    grid-template-columns: repeat(auto-fill, minmax(calc(100vw - 4rem), 1fr));
     grid-template-areas: none;
-  }
-  .Main-dash-board .main {
-    margin: auto;
-    max-width: 74rem;
+    grid-template: auto/minmax(min-content, 75rem);
   }
   .Main-dash-board .main,
 .Main-dash-board .side-bar-l,
@@ -542,7 +546,6 @@ input[type=text] {
 }
 @media screen and (max-width: 480px) {
   .Main-dash-board .main {
-    margin: auto;
     max-width: initial;
   }
 }
@@ -831,6 +834,25 @@ input[type=text] {
 .Rules-target .rues-content > ol > li input:checked ~ .rule-description-content {
   max-height: 100vh;
   padding: 1rem 2rem 1rem;
+}
+
+.Theme-preferences .link-color-content,
+.Theme-preferences .theme-color-content,
+.Theme-preferences .main-menu-color-content,
+.Theme-preferences .sub-menu-color-content {
+  margin: 1rem 0;
+}
+.Theme-preferences input[type=color] {
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 3em;
+  height: 3em;
+}
+.Theme-preferences input[type=color]::-webkit-color-swatch {
+  border: none;
+  border-radius: 0.5rem;
 }
 
 .Trend-display {

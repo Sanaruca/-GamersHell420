@@ -57,216 +57,33 @@
     </nav>
     <main class="Main-dash-board grid js-c">
       <section class="main flex col nd gap-2">
-        <div class="Post-bar flex target gap-1">
-          <div class="user-image-content">
-            <div class="user-image s-2 circle"></div>
-          </div>
-          <div class="controls-content"> 
-            <div class="from-control">
-              <textarea class="bg-3 t-color-3" id="tweet-input" rows="1" name="tweet-input" placeholder="Lorem, ipsum dolor?"></textarea>
-              <div class="post-btn btn bg-primary">post</div>
+        <!-- Theme-preferences-->
+        <div class="Theme-preferences target">
+          <h3>Menu</h3>
+          <hr>
+          <div class="link-color-content">
+            <div class="flex">
+              <p>Link Colors</p>
             </div>
-            <div class="btns-content flex gap-3 wrap">
-              <label class="btn round wb" for="upload-photo">🖼 Photo</label>
-              <label class="btn round wb" for="isPopupVisible">‼ Poll</label>
-              <div class="btn round wb">😄 Emogis</div>
-              <input class="hidden" id="upload-photo" type="file" name="photo" accept="image/png, image/jpeg">
+            <div class="flex nd js-sb">
+              <p class="t-color-3">Link</p>
+              <input id="link-color" type="color" value="#EB0026">
             </div>
           </div>
-          <input class="hidden" id="isPopupVisible" type="checkbox">
-          <div class="Poll-popup fixed flex center">
-            <form class="target flex col gap-2" action="" method="post">
-              <label class="quit-btn absolute btn t-color-3" for="isPopupVisible">⨯</label>
-              <h3 class="t-center">Create a poll</h3>
-              <div class="form-group">
-                <label for="subject">Question / Subject</label>
-                <div class="form-control">
-                  <input class="bg-3" id="subject" type="text" name="subject" placeholder="hola">
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="answer-1">answer-1</label>
-                <div class="form-control">
-                  <input class="bg-3" id="answer-1" type="text" name="answer-1" placeholder="hola">
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="answer-2">answer-2</label>
-                <div class="form-control">
-                  <input class="bg-3" id="answer-2" type="text" name="answer-1" placeholder="hola">
-                </div>
-              </div>
-              <input class="hidden" id="showHiddenAnwers" type="checkbox">
-              <div class="other-anwers-content flex col">
-                <div class="form-group">
-                  <label for="answer-3">answer-3</label>
-                  <div class="form-control">
-                    <input class="bg-3" id="answer-3" type="text" name="answer-3" placeholder="hola">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="answer-4">answer-4</label>
-                  <div class="form-control">
-                    <input class="bg-3" id="answer-4" type="text" name="answer-4" placeholder="hola">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="answer-5">answer-5</label>
-                  <div class="form-control">
-                    <input class="bg-3" id="answer-5" type="text" name="answer-5" placeholder="hola">
-                  </div>
-                </div>
-              </div>
-              <label class="add-answer-btn btn wb t-color-3" for="showHiddenAnwers"></label>
-              <div class="form-group">
-                <div class="btn bg-primary round">Post Poll</div>
-              </div>
-            </form>
-          </div>
-        </div>
-        <!-- tweets-->
-        <div class="Unmoderated-tweet-target target">
-          <div class="Option-button flex center btn">
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-          </div>
-          <div class="teewt-data flex gap-1">
-            <div class="user-image-content">
-              <div class="user-image s-2 circle"></div>
+          <div class="theme-color-content">
+            <h3>Theme Colors</h3>
+            <div class="flex nd js-sb">
+              <p class="t-color-3">Base</p>
+              <input id="link-color" type="color" value="#359D47">
             </div>
-            <div class="teewt-content">
-              <h4>usuario del tweet</h4>
-              <p class="posted-by t-color-3">posted by @someone ● 32 minutes ago 🖼🔒</p>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, maiores!</p>
-              <div class="teewt-reactions-content flex nd">
-                <div class="main-reactions-content flex">
-                  <div class="teewt-likes-count-content"><span>👍 213</span></div>
-                  <div class="teewt-shared-count-content"><span>↻ 124</span></div>
-                </div>
-                <div class="teewt-comments-count-content mintext t-color-3"><span>45 Comments</span></div>
-              </div>
+            <div class="flex nd js-sb">
+              <p class="t-color-3">Highlight</p>
+              <input id="link-color" type="color" value="#0179D2">
             </div>
           </div>
-          <div class="reaction-btns-content flex nd wrap">
-            <div class="r-action-btns-content flex gap-1">
-              <div class="r-action-btn btn bg-3">▲</div>
-              <div class="r-action-btn btn bg-3">▼</div>
-            </div>
-            <div class="r-action-btn btn bg-3">🥇</div>
-            <div class="large-btns-content flex wrap gap-1">
-              <div class="btn large bg-3"><i class="material-symbols-outlined">check_circle</i> Approve</div>
-              <div class="btn large bg-3"><i class="material-symbols-outlined">block</i> Remove</div>
-            </div>
-            <div class="r-action-btn btn bg-3">▢</div>
-          </div>
-        </div>
-        <div class="Unmoderated-tweet-target target">
-          <div class="Option-button flex center btn">
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-          </div>
-          <div class="teewt-data flex gap-1">
-            <div class="user-image-content">
-              <div class="user-image s-2 circle"></div>
-            </div>
-            <div class="teewt-content">
-              <h4>usuario del tweet</h4>
-              <p class="posted-by t-color-3">posted by @someone ● 32 minutes ago 🖼🔒</p>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, maiores!</p>
-              <div class="teewt-reactions-content flex nd">
-                <div class="main-reactions-content flex">
-                  <div class="teewt-likes-count-content"><span>👍 213</span></div>
-                  <div class="teewt-shared-count-content"><span>↻ 124</span></div>
-                </div>
-                <div class="teewt-comments-count-content mintext t-color-3"><span>45 Comments</span></div>
-              </div>
-            </div>
-          </div>
-          <div class="reaction-btns-content flex nd wrap">
-            <div class="r-action-btns-content flex gap-1">
-              <div class="r-action-btn btn bg-3">▲</div>
-              <div class="r-action-btn btn bg-3">▼</div>
-            </div>
-            <div class="r-action-btn btn bg-3">🥇</div>
-            <div class="large-btns-content flex wrap gap-1">
-              <div class="btn large bg-3"><i class="material-symbols-outlined">check_circle</i> Approve</div>
-              <div class="btn large bg-3"><i class="material-symbols-outlined">block</i> Remove</div>
-            </div>
-            <div class="r-action-btn btn bg-3">▢</div>
-          </div>
-        </div>
-        <div class="Unmoderated-tweet-target target">
-          <div class="Option-button flex center btn">
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-          </div>
-          <div class="teewt-data flex gap-1">
-            <div class="user-image-content">
-              <div class="user-image s-2 circle"></div>
-            </div>
-            <div class="teewt-content">
-              <h4>usuario del tweet</h4>
-              <p class="posted-by t-color-3">posted by @someone ● 32 minutes ago 🖼🔒</p>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, maiores!</p>
-              <div class="teewt-reactions-content flex nd">
-                <div class="main-reactions-content flex">
-                  <div class="teewt-likes-count-content"><span>👍 213</span></div>
-                  <div class="teewt-shared-count-content"><span>↻ 124</span></div>
-                </div>
-                <div class="teewt-comments-count-content mintext t-color-3"><span>45 Comments</span></div>
-              </div>
-            </div>
-          </div>
-          <div class="reaction-btns-content flex nd wrap">
-            <div class="r-action-btns-content flex gap-1">
-              <div class="r-action-btn btn bg-3">▲</div>
-              <div class="r-action-btn btn bg-3">▼</div>
-            </div>
-            <div class="r-action-btn btn bg-3">🥇</div>
-            <div class="large-btns-content flex wrap gap-1">
-              <div class="btn large bg-3"><i class="material-symbols-outlined">check_circle</i> Approve</div>
-              <div class="btn large bg-3"><i class="material-symbols-outlined">block</i> Remove</div>
-            </div>
-            <div class="r-action-btn btn bg-3">▢</div>
-          </div>
-        </div>
-        <div class="Unmoderated-tweet-target target">
-          <div class="Option-button flex center btn">
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-          </div>
-          <div class="teewt-data flex gap-1">
-            <div class="user-image-content">
-              <div class="user-image s-2 circle"></div>
-            </div>
-            <div class="teewt-content">
-              <h4>usuario del tweet</h4>
-              <p class="posted-by t-color-3">posted by @someone ● 32 minutes ago 🖼🔒</p>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, maiores!</p>
-              <div class="teewt-reactions-content flex nd">
-                <div class="main-reactions-content flex">
-                  <div class="teewt-likes-count-content"><span>👍 213</span></div>
-                  <div class="teewt-shared-count-content"><span>↻ 124</span></div>
-                </div>
-                <div class="teewt-comments-count-content mintext t-color-3"><span>45 Comments</span></div>
-              </div>
-            </div>
-          </div>
-          <div class="reaction-btns-content flex nd wrap">
-            <div class="r-action-btns-content flex gap-1">
-              <div class="r-action-btn btn bg-3">▲</div>
-              <div class="r-action-btn btn bg-3">▼</div>
-            </div>
-            <div class="r-action-btn btn bg-3">🥇</div>
-            <div class="large-btns-content flex wrap gap-1">
-              <div class="btn large bg-3"><i class="material-symbols-outlined">check_circle</i> Approve</div>
-              <div class="btn large bg-3"><i class="material-symbols-outlined">block</i> Remove</div>
-            </div>
-            <div class="r-action-btn btn bg-3">▢</div>
+          <div class="btns-content flex col gap-1">
+            <div class="btn round bg-primary">Save</div>
+            <div class="btn round wb">Cancel</div>
           </div>
         </div>
       </section>

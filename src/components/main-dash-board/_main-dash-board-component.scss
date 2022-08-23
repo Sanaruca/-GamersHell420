@@ -29,13 +29,15 @@
 
 
   @media screen and (max-width: 1136px) {
-    grid-template-columns: repeat(auto-fill, minmax(calc(100vw - 4rem), 1fr)); // 4rem of paddong
+    // grid-template-columns: repeat(auto-fill, minmax(calc(100vw - 4rem), 1fr)); // 4rem of paddong
     grid-template-areas: none;
 
-    .main {
-      margin: auto;
-      max-width: 74rem;
-    }
+    grid-template: auto / minmax(min-content, 75rem);
+
+    // .main {
+    //   margin: auto;
+    //   max-width: 74rem;
+    // }
 
     .main,
     .side-bar-l,
@@ -52,7 +54,7 @@
 
   @media screen and (max-width: 480px) {
     .main {
-      margin: auto;
+      // margin: auto;
       max-width: initial;
     }
   }

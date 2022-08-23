@@ -13,13 +13,13 @@ body {
   max-width: calc(132.8rem + 2rem) // of padding
 }
 
-hr{
+hr {
   border-color: var(--color-3);
 }
 
 // google fonts
 
-.material-symbols-outlined.fill{
+.material-symbols-outlined.fill {
   font-variation-settings: 'FILL' 1;
 }
 
@@ -73,16 +73,36 @@ a {
 
 
 // froms
-input[type="text"], textarea, select {
+input[type="text"],
+textarea,
+select {
   padding: 1rem;
   color: inherit;
 }
 
-.form-control>input[type="text"] {
-  width: 100%;
+.form {
+
+  &-control {
+
+    >input[type="text"],
+    >textarea {
+      min-width: 100%;
+    }
+  }
+
+  &-select {
+
+    >select {
+      min-width: 100%;
+    }
+  }
+
 }
 
-.form-select>select{
+// .form-control>input[type="text"] {
+// }
+
+.form-select>select {
   width: 100%;
 }
 
@@ -91,22 +111,23 @@ input[type="text"], textarea, select {
   background: url(https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=260&h=750&dpr=1);
   background-size: cover;
 
-  &.s-1{
+  &.s-1 {
     width: 7rem;
     height: 7rem;
-    
+
   }
-  &.s-2{
+
+  &.s-2 {
     width: 5rem;
     height: 5rem;
   }
 
-  &.s-3{
+  &.s-3 {
     width: 4rem;
     height: 4rem;
   }
 
-  &.s-4{
+  &.s-4 {
     width: 3rem;
     height: 3rem;
   }
@@ -120,6 +141,7 @@ input[type="text"], textarea, select {
     min-width: 15rem;
   }
 }
+
 @media screen and (max-width: 640px) {
   .btn.large {
     min-width: 12rem;
@@ -141,16 +163,17 @@ input[type="text"], textarea, select {
     border-radius: 0;
   }
 
-  .user-image{
-    &.s-1{
+  .user-image {
+    &.s-1 {
       width: 5rem;
       height: 5rem;
-      
+
     }
-    &.s-2{
+
+    &.s-2 {
       width: 4rem;
       height: 4rem;
-      
+
     }
   }
 }

@@ -1,0 +1,17 @@
+.Widget-appearance.target
+  form(name="widget-appearance-form").flex.col.gap-1
+    h2 Textarea widget appearance
+    hr
+    .form-gorup
+      label(for="widgetTitle") Widget Title
+      .form-control: input#widgetTitle(type="text" name="widgetTitle" placeholder="lorem").bg-3
+      p.mintext.t-color-3 Lorem ipsum dolor sit, amet consectetur
+    h2 Textarea widget content
+    hr
+    .form-gorup
+      label(for="widgetContent") Text
+      .form-control: textarea#widgetContent(name="widgetContent" placeholder="lorem", rows="10").bg-3
+      p.mintext.t-color-3 Lorem ipsum dolor sit, amet consectetur
+    .btns-content.flex.col.gap-1
+      .btn.bg-primary.round Save
+      .btn.round.wb Cancel

@@ -1,0 +1,24 @@
+.Wiki-editor.target
+  h2 c/ Torify
+  form.flex.col.gap-1
+    .form-group
+      label(for="pageTitle") Page Title * 
+      .form-control: input#pageTitle(type="text" placeholder="lorem", name="pageTitle").bg-3
+    .form-group
+      label(for="parentWikiPage") Parent Wiki Page 
+      .form-select: select#parentWikiPage(name="parentWikiPage").bg-3
+        option(value="index") Wiki Index
+    .form-group
+      label(for="bodyContent") Body 
+      .form-control: textarea#bodyContent(placeholder="lorem", rows="12", name="bodyContent").bg-3
+    .flex.gap-3.al-c
+      .form-group.flex.nd.al-c.gap-1
+        input#showInBannerMenu(type="checkbox", name="showInBannerMenu", checked)
+        label(for="showInBannerMenu") Show in Banner Menu
+      .form-group.fl-2
+        label(for="menuLabel") Menu label
+        .form-control: input#menuLabel(type="text", placeholder="lorem", name="menuLabel").bg-3
+    .btns-content.flex.nd.js-sb
+      .btn.wb Back
+      .btn.bg-primary Save Changes
+

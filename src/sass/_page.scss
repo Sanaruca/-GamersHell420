@@ -73,12 +73,16 @@ a {
 
 
 // froms
-input[type="text"] {
+input[type="text"], textarea, select {
   padding: 1rem;
   color: inherit;
 }
 
 .form-control>input[type="text"] {
+  width: 100%;
+}
+
+.form-select>select{
   width: 100%;
 }
 

@@ -57,6 +57,73 @@
     </nav>
     <main class="Main-dash-board grid">
       <section class="main flex col nd gap-2">
+        <div class="Post-bar flex target gap-1">
+          <div class="user-image-content">
+            <div class="user-image s-2 circle"></div>
+          </div>
+          <div class="controls-content"> 
+            <div class="from-control">
+              <textarea class="bg-3 t-color-3" id="tweet-input" rows="1" name="tweet-input" placeholder="Lorem, ipsum dolor?"></textarea>
+              <div class="post-btn btn bg-primary">post</div>
+            </div>
+            <div class="btns-content flex gap-3 wrap">
+              <label class="btn round wb" for="upload-photo">🖼 Photo</label>
+              <label class="btn round wb" for="isPopupVisible">‼ Poll</label>
+              <div class="btn round wb">😄 Emogis</div>
+              <input class="hidden" id="upload-photo" type="file" name="photo" accept="image/png, image/jpeg">
+            </div>
+          </div>
+          <input class="hidden" id="isPopupVisible" type="checkbox">
+          <div class="Poll-popup fixed flex center">
+            <form class="target flex col gap-2" action="" method="post">
+              <label class="quit-btn absolute btn t-color-3" for="isPopupVisible">⨯</label>
+              <h3 class="t-center">Create a poll</h3>
+              <div class="form-group">
+                <label for="subject">Question / Subject</label>
+                <div class="form-control">
+                  <input class="bg-3" id="subject" type="text" name="subject" placeholder="hola">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="answer-1">answer-1</label>
+                <div class="form-control">
+                  <input class="bg-3" id="answer-1" type="text" name="answer-1" placeholder="hola">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="answer-2">answer-2</label>
+                <div class="form-control">
+                  <input class="bg-3" id="answer-2" type="text" name="answer-1" placeholder="hola">
+                </div>
+              </div>
+              <input class="hidden" id="showHiddenAnwers" type="checkbox">
+              <div class="other-anwers-content flex col">
+                <div class="form-group">
+                  <label for="answer-3">answer-3</label>
+                  <div class="form-control">
+                    <input class="bg-3" id="answer-3" type="text" name="answer-3" placeholder="hola">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="answer-4">answer-4</label>
+                  <div class="form-control">
+                    <input class="bg-3" id="answer-4" type="text" name="answer-4" placeholder="hola">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="answer-5">answer-5</label>
+                  <div class="form-control">
+                    <input class="bg-3" id="answer-5" type="text" name="answer-5" placeholder="hola">
+                  </div>
+                </div>
+              </div>
+              <label class="add-answer-btn btn wb t-color-3" for="showHiddenAnwers"></label>
+              <div class="form-group">
+                <div class="btn bg-primary round">Post Poll</div>
+              </div>
+            </form>
+          </div>
+        </div>
         <!-- tweets-->
         <div class="Unmoderated-tweet-target target">
           <div class="Option-button flex center btn">

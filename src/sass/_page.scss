@@ -13,6 +13,10 @@ body {
   max-width: calc(132.8rem + 2rem) // of padding
 }
 
+hr{
+  border-color: var(--color-3);
+}
+
 // google fonts
 
 .material-symbols-outlined.fill{

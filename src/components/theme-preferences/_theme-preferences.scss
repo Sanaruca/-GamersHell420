@@ -1,5 +1,7 @@
 .Theme-preferences {
 
+  // background-color: red;
+
   .link-color-content,
   .theme-color-content,
   .main-menu-color-content,
@@ -12,9 +14,13 @@
     appearance: none;
     border: none;
     background-color: transparent;
+    cursor: pointer;
+    width: 3em;
+    height: 3em;
 
     &::-webkit-color-swatch{
       border: none;
+      border-radius: .5rem;
     }
   }
 }

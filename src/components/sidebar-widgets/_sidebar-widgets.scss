@@ -2,8 +2,8 @@
   .widgets-content {
     margin-top: 1rem;
     min-width: 50%;
-    
-    .widget-labels-content{
+
+    .widget-labels-content {
       min-width: 50%;
 
     }
@@ -12,6 +12,7 @@
       border-radius: 1rem;
       padding: 1rem;
       cursor: pointer;
+
       &::after {
         content: '\276F';
       }
@@ -19,35 +20,104 @@
 
     // .config-content {
 
-      @for $i from 1 through 3 {
-        .config-#{$i} {
-          padding: 0rem;
-          min-width: 0%;
-          width: 0%;
-          max-width: 0%;
-          overflow: hidden;
-          opacity: 0;
-          transition: cubic-bezier(0.4, 0, 0.2, 1) .5s;
-          
-          // position: absolute;
+    @for $i from 1 through 3 {
+      .config-#{$i} {
+        padding: 0rem;
+        min-width: 0%;
+        width: 0%;
+        max-width: 0%;
+        overflow: hidden;
+        opacity: 0;
+        transition: cubic-bezier(0.4, 0, 0.2, 1) .5s;
+
+        // position: absolute;
+      }
+    }
+
+    // ---------------
+    @for $i from 1 through 3 {
+      input#radio-#{$i}:checked {
+
+        ~.widget-labels-content .widget-label[for="radio-#{$i}"] {
+          background-color: #28465d;
+        }
+
+        ~.config-#{$i} {
+          // display: initial;
+          opacity: 1;
+          margin-left: 1rem;
+          padding: 1rem;
+          max-width: 100%;
         }
       }
-      
+    }
+
+    .back-btn {
+      height: 4rem;
+      width: 4rem;
+    }
+  }
+
+  // ---------------------------------------
+  @media screen and (max-width: 596px) {
+
+    // background-color: rebeccapurple;
+
+
+    .widgets-content {
+      overflow: hidden;
+
+      .back-btn {
+        display: flex;
+      }
+
+      .widget-labels-content {
+        min-width: 0%;
+        // background-color: rebeccapurple;
+        overflow: hidden;
+        max-width: 100%;
+      }
+
       // ---------------
       @for $i from 1 through 3 {
+
+        .config-#{$i} {
+          padding: 0rem;
+          min-width: 100%;
+          min-height: 100%;
+          position: absolute;
+          z-index: 100;
+          background-color: var(--color-2);
+          opacity: 1;
+          left: 100%;
+        }
+        
         input#radio-#{$i}:checked {
-          +.config-#{$i} {
-            // display: initial;
-            opacity: 1;
-            margin-left: 1rem;
-            padding: 1rem;
-            max-width: 100%;
+          
+          ~.widget-labels-content {
+            // max-width: 0%;
+            
+            .widget-label[for="radio-#{$i}"] {
+              background-color: #28465d;
+            }
+          }
+          
+          ~.config-#{$i} {
+            left: 0%;
+            padding: 0rem;
+            margin: 0;
+            // min-width: 100%;
+            // max-width: 100%;
           }
         }
       }
 
-      // ---------------
-    // }
 
+      
+
+
+
+
+    }
   }
 }

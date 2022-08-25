@@ -109,9 +109,19 @@ select {
 
 }
 
-// .form-control>input[type="text"] {
-// }
+input[type="color"] {
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 3em;
+  height: 3em;
 
+  &::-webkit-color-swatch {
+    border: none;
+    border-radius: .5rem;
+  }
+}
 .form-select>select {
   width: 100%;
 }

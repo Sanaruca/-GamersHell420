@@ -10,17 +10,17 @@
   }
 
 
-  input[type="color"]{
-    appearance: none;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    width: 3em;
-    height: 3em;
+  // input[type="color"]{
+  //   appearance: none;
+  //   border: none;
+  //   background-color: transparent;
+  //   cursor: pointer;
+  //   width: 3em;
+  //   height: 3em;
 
-    &::-webkit-color-swatch{
-      border: none;
-      border-radius: .5rem;
-    }
-  }
+  //   &::-webkit-color-swatch{
+  //     border: none;
+  //     border-radius: .5rem;
+  //   }
+  // }
 }

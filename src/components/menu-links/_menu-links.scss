@@ -1,19 +1,35 @@
-.Menu-links{
+.Menu-links {
 
 
-  .tap{
+  .tap {
     padding: 1rem 0;
     border-bottom: 1px solid var(--color-3);
 
-    p{
+    p {
       margin: 0;
     }
 
-    .edit-btn{
+    .edit-btn {
       padding: 1rem;
-      &:hover i{
-      color: var(--color-primary);
-    }}
+
+      &:hover i {
+        color: var(--color-primary);
+      }
+    }
+
+    .form-contol {
+      &::after{
+        content: attr(value);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #1a263280;
+        z-index: 100;
+        color: black;
+      }
+    }
 
 
     .switcher-content {
@@ -51,7 +67,7 @@
     }
   }
 
-  .options-content{
+  .options-content {
     margin-top: 2rem;
   }
 }

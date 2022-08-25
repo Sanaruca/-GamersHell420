@@ -3,7 +3,28 @@
   h3.title.t-center Lorem ipsum dolor sit amet consectetur, adipisicing elit.
   p.text.t-center Lorem ipsum dolor sit amet consectetur, adipisicing elit. A minima perspiciatis, numquam nemo dolorum nisi quia beatae dicta, provident laborum veritatis dolorem consequuntur sed. Vero minus corporis est eum repudiandae.
   .btns-content.flex.center.gap-2.wrap
-    .btn.round.wb Request to Join
+    label(for="showRequestToJoin").btn.round.wb Request to Join
+    //- -----------------------popup-----------------------
+    //- --------
+    input#showRequestToJoin(type="checkbox", name="showRequestToJoin").hidden
+    //- --------
+    .popup-background.fixed.flex.center.bg-glass
+      //- request to join popup
+      .request-to-join-popup.target
+        label(for="showRequestToJoin").quit-btn.btn.absolute.t-color-3 ⨯
+        form(name="request-join-community-form")
+          p.mintext REQUEST TO JOIN
+          h3 r/Torify
+          hr
+          .form-group.flex.col.gap-1
+            label(for="messageToModerators") Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid consequuntur.
+            .form-control: textarea#messageToModerators(name="messageToModerators", rows="10", placeholder="I would like to join this community").bg-3.max-w-min
+          .btns-content.flex.gap-1.nd.js-e
+            label(for="showRequestToJoin").btn.round.wb Cancel
+            .btn.round.bg-primary Send Request
+
+
+    //- ---------
     .btn.round.wb Message Mods
     .btn.round.bg-primary Browse Torify
   p.note.mintext.t-color-3.t-center Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, harum est dolorum illum reiciendis modi autem atque similique quisquam eaque iusto incidunt, fugiat, dignissimos molestiae. Architecto reprehenderit eaque illum suscipit! Lorem ipsum dolor sit amet.

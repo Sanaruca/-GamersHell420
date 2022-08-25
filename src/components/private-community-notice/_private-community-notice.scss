@@ -25,4 +25,60 @@
   .note {
     margin-top: 2rem;
   }
+
+  // ---------popup---------
+  .popup-background {
+    min-height: 100vh;
+    min-width: 100vw;
+    opacity: 0;
+    z-index: 200;
+    transform: scale(0);
+    transition: all .3s;
+    top: 0;
+    left: 0;
+  }
+
+  .request-to-join-popup {
+    max-width: 55rem;
+
+    .quit-btn{
+      top: 0;
+      font-size: 1.3em;
+      right: 0;
+      z-index: 100;
+      padding: 0 1rem;
+      &:hover{
+        color: inherit
+      }
+    }
+
+    .form-group{
+      margin-top: 1rem;
+    }
+
+    .form-control {
+      &::before {
+        content: 'MESSAGE TO MODERATORS';
+        position: absolute;
+        top: .5rem;
+        left: 1rem;
+        z-index: 100;
+        font-size: .8em;
+        color: #bfbfbf;
+      }
+
+
+      textarea#messageToModerators {
+        padding-top: 2.5rem;
+      }
+    }
+  }
+
+  input#showRequestToJoin:checked {
+    +.popup-background {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
 }

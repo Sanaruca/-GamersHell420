@@ -63,6 +63,13 @@ a {
   background-color: var(--color-primary);
 }
 
+.bg-glass {
+  background: #000000ab;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.2px);
+  -webkit-backdrop-filter: blur(9.2px);
+}
+
 .bg-2 {
   background-color: var(--color-2);
 }

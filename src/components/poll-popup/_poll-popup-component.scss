@@ -1,17 +1,10 @@
 .Poll-popup {
-  background-color: red;
   z-index: 200;
   top: 0;
   left: 0;
   height: 100vh;
   width: 100vw;
   transition: cubic-bezier(0, 0, 0, 1) .3s;
-
-  background: #000000ab;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(9.2px);
-  -webkit-backdrop-filter: blur(9.2px);
-
 
   form {
     max-width: 55rem;

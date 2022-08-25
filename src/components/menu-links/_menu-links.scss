@@ -9,6 +9,29 @@
       margin: 0;
     }
 
+    // -----------------------------
+    input#isEditable:checked {
+      ~div {
+
+        input#hideDirection {
+          padding: 1rem;
+          background-color: var(--color-3);
+        }
+
+        .form-contol {
+          &::before {
+            display: none;
+          }
+        }
+
+        i {
+          color: var(--color-primary)
+        }
+      }
+    }
+
+    // -----------------------------
+
     .edit-btn {
       padding: 1rem;
 
@@ -17,9 +40,15 @@
       }
     }
 
+    input#hideDirection {
+      padding: 0;
+      transition: all .1s;
+    }
+
     .form-contol {
-      &::after{
-        content: attr(value);
+
+      &::before {
+        content: '';
         height: 100%;
         width: 100%;
         position: absolute;
@@ -31,6 +60,7 @@
       }
     }
 
+    // -----------------------------
 
     .switcher-content {
 

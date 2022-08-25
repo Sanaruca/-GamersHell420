@@ -13,10 +13,13 @@
           input#wikiEnabled(type="checkbox", name="wikiEnabled").hidden
           label(for="wikiEnabled").switcher-btn.btn.round
       li.tap.flex.nd.js-sb
+        //- --------------------
+        input#isEditable(type="checkbox", name="isEditable").hidden
+        //- --------------------
         div
           span hide
-          .form-contol: input#hide(type="text", name="hide", value="http://some-direction.com").t-color-3.bg-2
-        div: .edit-btn.btn: i.material-symbols-outlined.fill edit
+          .form-contol: input#hideDirection(type="text", name="hideDirection", value="http://some-direction.com").t-color-3.bg-2
+        div: label(for="isEditable").edit-btn.btn: i.material-symbols-outlined.fill edit
     .options-content.flex.col.gap-1.nd
       a(href="#").max-w-max CREATE NEW TAP
       a(href="#").max-w-max REORDER LINKS

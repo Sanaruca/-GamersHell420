@@ -35,6 +35,18 @@ textarea:focus, input:focus {
   flex: initial;
 }
 
+.fl-1 {
+  flex: 1;
+}
+
+.fl-2 {
+  flex: 2;
+}
+
+.fl-3 {
+  flex: 3;
+}
+
 .wrap {
   flex-wrap: wrap;
 }
@@ -100,16 +112,38 @@ textarea:focus, input:focus {
   margin: auto;
 }
 
+.min-w-max {
+  min-width: max-content;
+}
+.min-w-min {
+  min-width: min-content;
+}
+.min-h-max {
+  min-height: max-content;
+}
+.min-h-min {
+  min-height: min-content;
+}
+
+.max-w-max {
+  max-width: max-content;
+}
+.max-w-min {
+  max-width: min-content;
+}
+.max-h-max {
+  max-height: max-content;
+}
+.max-h-min {
+  max-height: min-content;
+}
+
 .col {
   flex-flow: column nowrap;
 }
 
 .grid {
   display: grid;
-}
-
-.circle {
-  border-radius: 50%;
 }
 
 .btn {
@@ -126,6 +160,11 @@ textarea:focus, input:focus {
 }
 .btn.large {
   min-width: 18rem;
+}
+
+.circle {
+  padding: 0;
+  border-radius: 50%;
 }
 
 .round {
@@ -211,6 +250,13 @@ a {
   background-color: var(--color-primary);
 }
 
+.bg-glass {
+  background: rgba(0, 0, 0, 0.6705882353);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.2px);
+  -webkit-backdrop-filter: blur(9.2px);
+}
+
 .bg-2 {
   background-color: var(--color-2);
 }
@@ -219,12 +265,38 @@ a {
   background-color: var(--color-3);
 }
 
-input[type=text] {
+input[type=text],
+input[type=number],
+textarea,
+select {
   padding: 1rem;
   color: inherit;
 }
 
-.form-control > input[type=text] {
+.form-control > input[type=text],
+.form-control > input[type=number],
+.form-control > textarea {
+  min-width: 100%;
+  min-height: 100%;
+}
+.form-select > select {
+  min-width: 100%;
+}
+
+input[type=color] {
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 3em;
+  height: 3em;
+}
+input[type=color]::-webkit-color-swatch {
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.form-select > select {
   width: 100%;
 }
 
@@ -705,17 +777,12 @@ input[type=text] {
 }
 
 .Poll-popup {
-  background-color: red;
   z-index: 200;
   top: 0;
   left: 0;
   height: 100vh;
   width: 100vw;
   transition: cubic-bezier(0, 0, 0, 1) 0.3s;
-  background: rgba(0, 0, 0, 0.6705882353);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(9.2px);
-  -webkit-backdrop-filter: blur(9.2px);
 }
 .Poll-popup form {
   max-width: 55rem;
@@ -814,6 +881,77 @@ input[type=text] {
   }
 }
 
+.Post-flair .table {
+  min-width: 100%;
+}
+
+.Post-settings select#selectTime {
+  border-left: 1px solid grey;
+}
+
+.Private-community-notice .content {
+  max-width: 50rem;
+  padding: 2rem 0;
+}
+.Private-community-notice .key-icon {
+  height: 10rem;
+  width: 10rem;
+}
+.Private-community-notice .key-icon i {
+  font-size: 5rem;
+  transform: rotateY(180deg) rotate(45deg);
+}
+.Private-community-notice .title {
+  margin-top: 3rem;
+}
+.Private-community-notice .text,
+.Private-community-notice .btns-content,
+.Private-community-notice .note {
+  margin-top: 2rem;
+}
+.Private-community-notice .popup-background {
+  min-height: 100vh;
+  min-width: 100vw;
+  opacity: 0;
+  z-index: 200;
+  transform: scale(0);
+  transition: all 0.3s;
+  top: 0;
+  left: 0;
+}
+.Private-community-notice .request-to-join-popup {
+  max-width: 55rem;
+}
+.Private-community-notice .request-to-join-popup .quit-btn {
+  top: 0;
+  font-size: 1.3em;
+  right: 0;
+  z-index: 100;
+  padding: 0 1rem;
+}
+.Private-community-notice .request-to-join-popup .quit-btn:hover {
+  color: inherit;
+}
+.Private-community-notice .request-to-join-popup .form-group {
+  margin-top: 1rem;
+}
+.Private-community-notice .request-to-join-popup .form-control::before {
+  content: "MESSAGE TO MODERATORS";
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+  z-index: 100;
+  font-size: 0.8em;
+  color: #bfbfbf;
+}
+.Private-community-notice .request-to-join-popup .form-control textarea#messageToModerators {
+  padding-top: 2.5rem;
+}
+.Private-community-notice input#showRequestToJoin:checked + .popup-background {
+  transform: scale(1);
+  opacity: 1;
+}
+
 .Rules-target .rues-content > ol > li label {
   padding: 1.3rem 1rem;
   justify-content: space-between;
@@ -836,23 +974,152 @@ input[type=text] {
   padding: 1rem 2rem 1rem;
 }
 
+.Sidebar-widgets .widgets-content {
+  margin-top: 1rem;
+  min-width: 50%;
+}
+.Sidebar-widgets .widgets-content .widget-labels-content {
+  min-width: 50%;
+}
+.Sidebar-widgets .widgets-content .widget-label {
+  border-radius: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+.Sidebar-widgets .widgets-content .widget-label::after {
+  content: "❯";
+}
+.Sidebar-widgets .widgets-content .config-1 {
+  padding: 0rem;
+  min-width: 0%;
+  width: 0%;
+  max-width: 0%;
+  overflow: hidden;
+  opacity: 0;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 0.5s;
+}
+.Sidebar-widgets .widgets-content .config-2 {
+  padding: 0rem;
+  min-width: 0%;
+  width: 0%;
+  max-width: 0%;
+  overflow: hidden;
+  opacity: 0;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 0.5s;
+}
+.Sidebar-widgets .widgets-content .config-3 {
+  padding: 0rem;
+  min-width: 0%;
+  width: 0%;
+  max-width: 0%;
+  overflow: hidden;
+  opacity: 0;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 0.5s;
+}
+.Sidebar-widgets .widgets-content input#radio-1:checked ~ .widget-labels-content .widget-label[for=radio-1] {
+  background-color: #28465d;
+}
+.Sidebar-widgets .widgets-content input#radio-1:checked ~ .config-1 {
+  opacity: 1;
+  margin-left: 1rem;
+  padding: 1rem;
+  max-width: 100%;
+}
+.Sidebar-widgets .widgets-content input#radio-2:checked ~ .widget-labels-content .widget-label[for=radio-2] {
+  background-color: #28465d;
+}
+.Sidebar-widgets .widgets-content input#radio-2:checked ~ .config-2 {
+  opacity: 1;
+  margin-left: 1rem;
+  padding: 1rem;
+  max-width: 100%;
+}
+.Sidebar-widgets .widgets-content input#radio-3:checked ~ .widget-labels-content .widget-label[for=radio-3] {
+  background-color: #28465d;
+}
+.Sidebar-widgets .widgets-content input#radio-3:checked ~ .config-3 {
+  opacity: 1;
+  margin-left: 1rem;
+  padding: 1rem;
+  max-width: 100%;
+}
+.Sidebar-widgets .widgets-content .back-btn {
+  height: 4rem;
+  width: 4rem;
+}
+@media screen and (max-width: 596px) {
+  .Sidebar-widgets .widgets-content {
+    overflow: hidden;
+  }
+  .Sidebar-widgets .widgets-content .back-btn {
+    display: flex;
+  }
+  .Sidebar-widgets .widgets-content .widget-labels-content {
+    min-width: 0%;
+    overflow: hidden;
+    max-width: 100%;
+  }
+  .Sidebar-widgets .widgets-content .config-1 {
+    padding: 0rem;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    z-index: 100;
+    background-color: var(--color-2);
+    opacity: 1;
+    left: 100%;
+  }
+  .Sidebar-widgets .widgets-content input#radio-1:checked ~ .widget-labels-content .widget-label[for=radio-1] {
+    background-color: #28465d;
+  }
+  .Sidebar-widgets .widgets-content input#radio-1:checked ~ .config-1 {
+    left: 0%;
+    padding: 0rem;
+    margin: 0;
+  }
+  .Sidebar-widgets .widgets-content .config-2 {
+    padding: 0rem;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    z-index: 100;
+    background-color: var(--color-2);
+    opacity: 1;
+    left: 100%;
+  }
+  .Sidebar-widgets .widgets-content input#radio-2:checked ~ .widget-labels-content .widget-label[for=radio-2] {
+    background-color: #28465d;
+  }
+  .Sidebar-widgets .widgets-content input#radio-2:checked ~ .config-2 {
+    left: 0%;
+    padding: 0rem;
+    margin: 0;
+  }
+  .Sidebar-widgets .widgets-content .config-3 {
+    padding: 0rem;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    z-index: 100;
+    background-color: var(--color-2);
+    opacity: 1;
+    left: 100%;
+  }
+  .Sidebar-widgets .widgets-content input#radio-3:checked ~ .widget-labels-content .widget-label[for=radio-3] {
+    background-color: #28465d;
+  }
+  .Sidebar-widgets .widgets-content input#radio-3:checked ~ .config-3 {
+    left: 0%;
+    padding: 0rem;
+    margin: 0;
+  }
+}
+
 .Theme-preferences .link-color-content,
 .Theme-preferences .theme-color-content,
 .Theme-preferences .main-menu-color-content,
 .Theme-preferences .sub-menu-color-content {
   margin: 1rem 0;
-}
-.Theme-preferences input[type=color] {
-  appearance: none;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  width: 3em;
-  height: 3em;
-}
-.Theme-preferences input[type=color]::-webkit-color-swatch {
-  border: none;
-  border-radius: 0.5rem;
 }
 
 .Trend-display {
@@ -959,6 +1226,10 @@ input[type=text] {
   gap: 1rem;
 }
 
+.Unmoderated-tweet-spam-target .btn.large {
+  min-width: max-content;
+}
+
 .Unmoderated-tweet-target .Option-button {
   position: absolute;
   z-index: 100;
@@ -1000,6 +1271,7 @@ input[type=text] {
   min-width: 15rem;
   justify-content: start;
   padding: 0.5rem;
+  z-index: 100;
 }
 .User-account-dropdown::after {
   content: "▼";
@@ -1022,10 +1294,13 @@ input[type=text] {
   opacity: 1;
   transform: scale(1);
 }
+.User-account-dropdown input#test:checked ~ .aux-div {
+  display: initial;
+}
 .User-account-dropdown .panel-links-content {
   cursor: initial;
   min-width: max-content;
-  width: 30rem;
+  width: 100%;
   right: 0;
   padding: 2rem;
   top: 100%;
@@ -1037,6 +1312,15 @@ input[type=text] {
 .User-account-dropdown .panel-links-content a {
   justify-content: start;
   max-width: max-content;
+}
+.User-account-dropdown .aux-div {
+  height: 10rem;
+  width: 10rem;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  z-index: -1;
 }
 @media screen and (max-width: 768px) {
   .User-account-dropdown .panel-links-content {
@@ -1100,6 +1384,17 @@ input[type=text] {
   left: 0;
   width: 100vw;
   top: 0;
+}
+
+.Widget-appearance textarea#widgetContent {
+  resize: none;
+  font-size: 1em;
+}
+
+.Wiki-editor textarea#bodyContent {
+  min-width: 100%;
+  resize: none;
+  font-size: 1.005em;
 }
 
 /*# sourceMappingURL=styles.css.map */

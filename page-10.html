@@ -58,77 +58,47 @@
     </nav>
     <main class="Main-dash-board grid js-c">
       <section class="main flex col nd gap-2">
-        <!-- tweets-->
-        <div class="Tweet-detail-target target">
-          <div class="Option-button flex center btn">
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-          </div>
-          <div class="teewt-data flex">
-            <div class="user-image-content">
-              <div class="user-image s-2 circle"></div>
-            </div>
-            <div class="teewt-content">
-              <h4>usuario del tweet</h4>
-              <p class="posted-by t-color-3">posted by @someone ● 32 minutes ago 🖼🔒</p>
-              <div class="teewt-text-content flex col gap-2">
-                <p class="t-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis assumenda non praesentium quae dignissimos, ipsam exercitationem est quos officia inventore vel cumque libero commodi modi in, molestiae quibusdam ab necessitatibus!</p>
-                <p class="t-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis assumenda non praesentium quae dignissimos, ipsam exercitationem est quos officia inventore vel cumque libero commodi modi in, molestiae quibusdam ab necessitatibus!</p>
-                <p class="t-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis assumenda non praesentium quae dignissimos, ipsam exercitationem est quos officia inventore vel cumque libero commodi modi in.</p>
-              </div>
-              <div class="teewt-reactions-content flex nd">
-                <div class="main-reactions-content flex gap-2">
-                  <div class="teewt-likes-count-content"><span>👍 213</span></div>
-                  <div class="teewt-shared-count-content"><span>↻ 124</span></div>
-                  <div class="teewt-custom-count-content"><span>◍ 2</span></div>
-                  <div class="teewt-custom-count-content"><span>🧞‍♂️ 124</span></div>
-                </div>
-                <div class="teewt-comments-count-content mintext t-color-3"><span>45 Comments</span></div>
-              </div>
-            </div>
-          </div>
-          <div class="reaction-btns-content flex nd wrap">
-            <div class="r-action-btns-content flex">
-              <div class="r-action-btn btn bg-3">▲</div>
-              <div class="r-action-btn btn bg-3">▼</div>
-            </div>
-            <div class="r-action-btn btn bg-3">🥇</div>
-            <div class="large-btns-content flex">
-              <div class="btn large bg-3">↻ Retweet</div>
-              <div class="btn large bg-3">💬 comment</div>
-            </div>
-            <div class="r-action-btn btn bg-3">▢</div>
-          </div>
-          <div class="Comments-section flex col gap-2">
-            <div class="user-account-comment-bar-content flex nd center gap-2">
-              <div class="user-image s-3 circle"></div>
+        <!-- Wiki-editor-->
+        <div class="Wiki-editor target">
+          <h2>c/ Torify</h2>
+          <form class="flex col gap-1">
+            <div class="form-group">
+              <label for="pageTitle">Page Title * </label>
               <div class="form-control">
-                <input class="bg-3" type="text" placeholder="lorem">
+                <input class="bg-3" id="pageTitle" type="text" placeholder="lorem" name="pageTitle">
               </div>
-              <div class="coomnet-btn btn bg-primary">comment</div>
             </div>
-            <div class="comments-cotent flex col gap-2">
-              <div class="user-comment-content">
-                <h3>gola <span class="comment-time-ago mintext t-color-3">● 4hours ago</span></h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, provident! Tenetur, 
-                  officiis corporis iusto eum nesciunt, 
-                  ducimus sed assumenda minus itaque natus 
-                  temporibus. Iure sed itaque perferendis reiciendis commodi veniam!
-                </p>
-                <div class="comment-action-btns-content flex nd gap-2">
-                  <div class="r-actions-content flex nd">
-                    <div class="r-action-btn">▲</div>
-                    <div class="r-action-btn">▼</div>
-                  </div>
-                  <div class="other-content flex center gap-2"><span class="r-a-count">15</span>
-                    <div class="reply-btn btn">reply</div>
-                  </div>
+            <div class="form-group">
+              <label for="parentWikiPage">Parent Wiki Page </label>
+              <div class="form-select">
+                <select class="bg-3" id="parentWikiPage" name="parentWikiPage">
+                  <option value="index">Wiki Index</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="bodyContent">Body </label>
+              <div class="form-control">
+                <textarea class="bg-3" id="bodyContent" placeholder="lorem" rows="12" name="bodyContent"></textarea>
+              </div>
+            </div>
+            <div class="flex gap-3 al-c">
+              <div class="form-group flex nd al-c gap-1">
+                <input id="showInBannerMenu" type="checkbox" name="showInBannerMenu" checked>
+                <label for="showInBannerMenu">Show in Banner Menu</label>
+              </div>
+              <div class="form-group fl-2">
+                <label for="menuLabel">Menu label</label>
+                <div class="form-control">
+                  <input class="bg-3" id="menuLabel" type="text" placeholder="lorem" name="menuLabel">
                 </div>
               </div>
             </div>
-          </div>
+            <div class="btns-content flex nd js-sb">
+              <div class="btn wb">Back</div>
+              <div class="btn bg-primary">Save Changes</div>
+            </div>
+          </form>
         </div>
       </section>
       <section class="side-bar-l flex col nd gap-2">

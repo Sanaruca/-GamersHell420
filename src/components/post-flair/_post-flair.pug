@@ -1,57 +1,70 @@
-.Post-flair.target
+.Post-flair.target.flex.col.gap-2.mintext
   //- ------------------------------
-  table.table
-    tbody.tbody
+  table(data-table="table-1").table
+    tbody.tbody.flex.col.gap-1
       //- head
-      tr
-        th.t-color-3 POST FLAIR PREVIEW
-        th Flair background color
-        th Flair text color
-        th Post background color
-        th FLAIR ID #[i.material-symbols-outlined info]
+      tr.flex.gap-1
+        th.flex.nd.center.fl-2 POST FLAIR PREVIEW
+        th.flex.nd.center Flair background color
+        th.flex.nd.center Flair text color
+        th.flex.nd.center Post background color
+        th.flex.nd.center.gap-1 FLAIR ID #[i(data-icon="info").material-symbols-outlined info]
       //- ----
-      tr
-        td 👀 SIMPLE POST 🕵️‍♀️
-        td: input(type="color", name="color", value="#EB0026")
-        td: input(type="color", name="color", value="#EB0026")
-        td: input(type="color", name="color", value="#303030")
-        td
+      tr.flex.gap-1
+        td.fl-2 👀 SIMPLE POST 🕵️‍♀️
+        td.flex.nd.center: input(type="color", name="color", value="#EB0026")
+        td.flex.nd.center: input(type="color", name="color", value="#EB0026")
+        td.flex.nd.center: input(type="color", name="color", value="#303030")
+        td.flex.nd.min-w-max.center.gap-1
           a(href="#") COPY ID
-          i.material-symbols-outlined.fill.btn delete
-      tr
-        td 👀 SIMPLE POST 🕵️‍♀️
-        td: input(type="color", name="color", value="#EB0026")
-        td: input(type="color", name="color", value="#EB0026")
-        td: input(type="color", name="color", value="#303030")
-        td
+          i.delete-btn.material-symbols-outlined.fill.btn delete
+      tr.flex.gap-1
+        td.fl-2 👀 SIMPLE POST 🕵️‍♀️
+        td.flex.nd.center: input(type="color", name="color", value="#EB0026")
+        td.flex.nd.center: input(type="color", name="color", value="#EB0026")
+        td.flex.nd.center: input(type="color", name="color", value="#303030")
+        td.flex.nd.min-w-max.center.gap-1
           a(href="#") COPY ID
-          i.material-symbols-outlined.fill.btn delete
-      tr
-        td 👀 SIMPLE POST 🕵️‍♀️
-        td: input(type="color", name="color", value="#EB0026")
-        td: input(type="color", name="color", value="#EB0026")
-        td: input(type="color", name="color", value="#303030")
-        td
+          i.delete-btn.material-symbols-outlined.fill.btn delete
+      tr.flex.gap-1
+        td.fl-2 👀 SIMPLE POST 🕵️‍♀️
+        td.flex.nd.center: input(type="color", name="color", value="#EB0026")
+        td.flex.nd.center: input(type="color", name="color", value="#EB0026")
+        td.flex.nd.center: input(type="color", name="color", value="#303030")
+        td.flex.nd.min-w-max.center.gap-1
           a(href="#") COPY ID
-          i.material-symbols-outlined.fill.btn delete
-      tr
-        td 👀 SIMPLE POST 🕵️‍♀️
-        td: input(type="color", name="color", value="#EB0026")
-        td: input(type="color", name="color", value="#EB0026")
-        td: input(type="color", name="color", value="#303030")
-        td
+          i.delete-btn.material-symbols-outlined.fill.btn delete
+      tr.flex.gap-1
+        td.fl-2 👀 SIMPLE POST 🕵️‍♀️
+        td.flex.nd.center: input(type="color", name="color", value="#EB0026")
+        td.flex.nd.center: input(type="color", name="color", value="#EB0026")
+        td.flex.nd.center: input(type="color", name="color", value="#303030")
+        td.flex.nd.min-w-max.center.gap-1
           a(href="#") COPY ID
-          i.material-symbols-outlined.fill.btn delete
-      tr
-        td 👀 SIMPLE POST 🕵️‍♀️
-        td: input(type="color", name="color", value="#EB0026")
-        td: input(type="color", name="color", value="#EB0026")
-        td: input(type="color", name="color", value="#303030")
-        td
+          i.delete-btn.material-symbols-outlined.fill.btn delete
+      tr.flex.gap-1
+        td.fl-2 👀 SIMPLE POST 🕵️‍♀️
+        td.flex.nd.center: input(type="color", name="color", value="#EB0026")
+        td.flex.nd.center: input(type="color", name="color", value="#EB0026")
+        td.flex.nd.center: input(type="color", name="color", value="#303030")
+        td.flex.nd.min-w-max.center.gap-1
           a(href="#") COPY ID
-          i.material-symbols-outlined.fill.btn delete
+          i.delete-btn.material-symbols-outlined.fill.btn delete
   //- ------------------------------
-  p Flair apearence
-  table
-    tbody
-    
+  .table-2-content
+    p.t-color-3 Flair apearence
+    table(data-table="table-2").table
+      tbody.tbody.flex.col.gap-1
+        tr.flex.gap-1
+          th.flex.nd.center.fl-2: label(for="flairText") Flair text
+          th.flex.nd.center Flair backgorond color
+          th.flex.nd.center Flair text color
+          th.flex.nd.center Post backgorond color
+        tr.flex.gap-1
+          td.fl-2: .form-control: input#flairText(type="text", name="flairText", value="👀 SIMPLE POST 🕵️‍♀️").bg-3.mintext
+          td.flex.nd.center: input(type="color", name="color", value="#EB0026")
+          td.flex.nd.center: input(type="color", name="color", value="#EB0026")
+          td.flex.nd.center: input(type="color", name="color", value="#EB0026")
+    p.mintext.t-color-3 Lorem ipsum dolor sit amet consectetur adipisicing.
+  .btn-content.nd.center.flex
+    .btn.bg-primary ADD NEW FLAIR

@@ -2,5 +2,26 @@
 
   .table {
     min-width: 100%;
+
+    tr:first-of-type{
+      border-bottom: 1px solid #283440;
+      padding-bottom: 1rem;
+    }
+
+  }
+
+  i[data-icon="info"]{
+    font-size: 2rem;
+  }
+
+  .delete-btn{
+    font-size: 2rem;
+    padding: 0;
+    &:hover{
+    color: #ff4141;
+  }}
+
+  .table-2-content{
+    margin-top: 1rem;
   }
 }

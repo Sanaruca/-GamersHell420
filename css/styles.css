@@ -598,7 +598,7 @@ input[type=color]::-webkit-color-swatch {
 }
 @media screen and (max-width: 1250px) {
   .Main-dash-board {
-    grid-template-columns: minmax(25rem, 1fr) 55rem minmax(25rem, 1fr);
+    grid-template-columns: minmax(25rem, 1fr) 58rem minmax(25rem, 1fr);
   }
 }
 @media screen and (max-width: 1136px) {
@@ -883,6 +883,23 @@ input[type=color]::-webkit-color-swatch {
 
 .Post-flair .table {
   min-width: 100%;
+}
+.Post-flair .table tr:first-of-type {
+  border-bottom: 1px solid #283440;
+  padding-bottom: 1rem;
+}
+.Post-flair i[data-icon=info] {
+  font-size: 2rem;
+}
+.Post-flair .delete-btn {
+  font-size: 2rem;
+  padding: 0;
+}
+.Post-flair .delete-btn:hover {
+  color: #ff4141;
+}
+.Post-flair .table-2-content {
+  margin-top: 1rem;
 }
 
 .Post-settings select#selectTime {

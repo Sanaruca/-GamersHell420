@@ -635,6 +635,73 @@ input[type=color]::-webkit-color-swatch {
   list-style-position: inside;
 }
 
+.Menu-links .tap {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--color-3);
+}
+.Menu-links .tap p {
+  margin: 0;
+}
+.Menu-links .tap input#isEditable:checked ~ div input#hideDirection {
+  padding: 1rem;
+  background-color: var(--color-3);
+}
+.Menu-links .tap input#isEditable:checked ~ div .form-contol::before {
+  display: none;
+}
+.Menu-links .tap input#isEditable:checked ~ div i {
+  color: var(--color-primary);
+}
+.Menu-links .tap .edit-btn {
+  padding: 1rem;
+}
+.Menu-links .tap .edit-btn:hover i {
+  color: var(--color-primary);
+}
+.Menu-links .tap input#hideDirection {
+  padding: 0;
+  transition: all 0.1s;
+}
+.Menu-links .tap .form-contol::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(26, 38, 50, 0.5019607843);
+  z-index: 100;
+  color: black;
+}
+.Menu-links .tap .switcher-content .switcher-btn.btn {
+  background-color: #434a50;
+  height: 2.5rem;
+  width: 6rem;
+  transition: linear 0.1s;
+}
+.Menu-links .tap .switcher-content .switcher-btn.btn::after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  left: 3px;
+  height: 2rem;
+  width: 2rem;
+  box-shadow: 0rem 0rem 1rem 0rem rgba(0, 0, 0, 0.2705882353);
+  transition: cubic-bezier(0, 0, 0, 1) 0.5s;
+}
+.Menu-links .tap .switcher-content input#wikiEnabled:checked + .switcher-btn {
+  background-color: var(--color-primary);
+}
+.Menu-links .tap .switcher-content input#wikiEnabled:checked + .switcher-btn:after {
+  left: calc(100% - 3px);
+  transform: translateX(-100%);
+  background-color: #fff;
+}
+.Menu-links .options-content {
+  margin-top: 2rem;
+}
+
 .Mnemonic-target {
   min-height: 10rem;
   min-width: 10rem;

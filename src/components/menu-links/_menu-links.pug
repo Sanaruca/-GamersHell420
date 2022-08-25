@@ -1,0 +1,22 @@
+.Menu-links.target
+  h2 Menu Links
+  hr
+  .content
+    ul.taps-content
+      li.tap
+        span Post
+      li.tap.flex.nd.js-sb
+        div
+          span Wiki
+          p.t-color-3 /wiki/index
+        div: .switcher-content
+          input#wikiEnabled(type="checkbox", name="wikiEnabled").hidden
+          label(for="wikiEnabled").switcher-btn.btn.round
+      li.tap.flex.nd.js-sb
+        div
+          span hide
+          p.t-color-3 http://some-direction.com
+        div: .edit-btn.btn: i.material-symbols-outlined.fill edit
+    .options-content.flex.col.gap-1.nd
+      a(href="#").max-w-max CREATE NEW TAP
+      a(href="#").max-w-max REORDER LINKS

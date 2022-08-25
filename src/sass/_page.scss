@@ -81,6 +81,7 @@ a {
 
 // froms
 input[type="text"],
+input[type="number"],
 textarea,
 select {
   padding: 1rem;
@@ -92,8 +93,10 @@ select {
   &-control {
 
     >input[type="text"],
+    >input[type="number"],
     >textarea {
       min-width: 100%;
+      min-height: 100%;
     }
   }
 

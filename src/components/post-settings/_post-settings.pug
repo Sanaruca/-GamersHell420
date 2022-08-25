@@ -1,0 +1,13 @@
+.Post-settings.target
+  form(name="post-settings-form").flex.col.gap-2
+    .form-group
+      label(for="karmaRequired") Karma required ro Make A post on this Community
+      .form-control.max-w-max: input#karmaRequired(type="number", name="karmaRequired", placeholder="number", value="100").bg-3
+    .form-group
+      label(for="ageAcountRequired") Age of Torfy account required to make  post
+      .form-group.flex.nd
+        .form-control: input#ageAcountRequired(type="number", name="ageAcountRequired", placeholder="number", value="0").bg-3
+        .form-select: select#selectTime(name="selectTime").bg-3
+          option(value="day") day(s)
+    .btn-content.flex.nd.center
+      .btn.round.bg-primary save changes

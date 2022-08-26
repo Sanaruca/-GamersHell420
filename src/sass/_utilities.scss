@@ -88,9 +88,30 @@
   align-items: center;
 }
 
-.m-a {
-  // margin auto
-  margin: auto;
+.m {
+
+  // margin
+  &-a {
+    margin: auto;
+  }
+
+  // top
+  &-t {
+    @for $n from 1 through 3 {
+      &-#{$n} {
+        margin-top: #{$n}rem;
+      }
+    }
+  }
+
+  // bottom
+  &-b {
+    @for $n from 1 through 3 {
+      &-#{$n} {
+        margin-bottom: #{$n}rem;
+      }
+    }
+  }
 }
 
 .min {
@@ -100,6 +121,7 @@
     &-max {
       min-width: max-content;
     }
+
     &-min {
       min-width: min-content;
     }
@@ -110,6 +132,7 @@
     &-max {
       min-height: max-content;
     }
+
     &-min {
       min-height: min-content;
     }
@@ -123,6 +146,7 @@
     &-max {
       max-width: max-content;
     }
+
     &-min {
       max-width: min-content;
     }
@@ -133,6 +157,7 @@
     &-max {
       max-height: max-content;
     }
+
     &-min {
       max-height: min-content;
     }

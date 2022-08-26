@@ -1,0 +1,20 @@
+.Create-tap.target
+  h2 Create New Tap
+  a(href="#").flex.nd.al-c.gap-1 #[i.material-symbols-outlined info] Create New Tap
+  hr.m-t-1
+  form(name="create-new-tap-form").flex.col.gap-1.m-t-1
+    .form-group
+      label(for="") Tap Type
+      p.mintext.t-color-3 Lorem ipsum dolor sit.
+    .form-group
+      label(for="createLickTap").flex.nd.al-c.gap-1
+        input#createLickTap(type="checkbox", name="createLickTap")
+        | Create link Tap
+    .form-group
+      .form-control: input#tapTitle(type="text", name="tapTitle", placeholder="Tap Title").bg-3
+      p.mintext.t-color-3 Lorem ipsum dolor sit amet.
+    .form-group
+      .form-control: input#url(type="text", name="url", placeholder="URL").bg-3
+    .btns-content.flex.js-e.gap-2
+      .btn.wb.round Cancel
+      .btn.bg-primary.round Save

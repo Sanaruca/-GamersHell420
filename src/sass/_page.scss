@@ -1,5 +1,6 @@
 :root {
   --color-primary: #46B8DF;
+  --color-red: #ff4141;
   --color-1: #07131F;
   --color-2: #1A2632;
   --color-3: #283440;
@@ -122,6 +123,7 @@ input[type="color"] {
     border-radius: .5rem;
   }
 }
+
 .form-select>select {
   width: 100%;
 }

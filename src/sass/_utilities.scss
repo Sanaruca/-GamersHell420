@@ -96,7 +96,7 @@
   }
 
   // top
-  &-t {
+  &t {
     @for $n from 1 through 3 {
       &-#{$n} {
         margin-top: #{$n}rem;
@@ -105,7 +105,7 @@
   }
 
   // bottom
-  &-b {
+  &b {
     @for $n from 1 through 3 {
       &-#{$n} {
         margin-bottom: #{$n}rem;

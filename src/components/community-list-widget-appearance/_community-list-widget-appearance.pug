@@ -1,0 +1,30 @@
+.Community-list-widget-appearance.target
+  h2 Community List Widget Appearance
+  a(href="#").flex.nd.al-c.gap-1 #[i.material-symbols-outlined info] Community list widget appearance
+  hr.mt-1
+  form(name="community-list-widget-appearance-from").flex.col.gap-1.mt-1
+    .from-section
+      .from-group
+        label(for="widgetTitle") Widget title
+        .form-control: input#widgetTitle(type="text", name="widgetTitle", placeholder="some title").bg-3
+        p.mintext.t-color-3 Lorem ipsum dolor sit amet.
+    .from-section
+      p.t-color-3 Lorem ipsum dolor sit.
+      hr.mt-1.mb-1
+      .annoucements-content.flex.nd.js-sb.al-c.gap-1
+        p annoucements
+        i.material-symbols-outlined.fill.btn.delete-btn delete
+    .from-section
+      h3 Add New Community
+      .form-select.mt-1: select#communityChice(name="communityChice").bg-3
+        option(value="Choose a community") Choose a community
+      .reorder.btn.mt-1 REORDER COMMINITIES
+    .btns-content.flex.col.gap-1
+      .btn.round.bg-primary Save
+      .btn.round.wb Cancel
+
+
+
+
+
+

@@ -1,0 +1,24 @@
+.Upload-image.target
+  h2 Images
+  a(href="#").flex.nd.al-c.gap-1 #[i.material-symbols-outlined info] Images
+  hr.mt-1
+  p.t-color-3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere repellat nam provident.
+  form(name="upload-image-form").flex.col.gap-1
+    .form-group
+      label(for="widgetTitle") Widget title
+      p.mintext.t-color-3 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae animi, minus vel suscipit.
+      .form-control: input#widgetTitle(type="text", name="widgetTitle", placeholder="some title", value="My Image Stand").bg-3
+      p.mintext.t-color-3 Lorem ipsum dolor sit amet consectetur.
+    .form-group.drop-image-content
+      label(for="imageFile") Image
+      p.mintext.t-color-3 Lorem ipsum dolor sit amet.
+      label(for="imageFile").dropImg.btn.flex.center.col.nd.bg-3
+        i.material-symbols-outlined.fill backup
+      input#imageFile(type="file", name="imageFile", accept="image/png, image/jpeg").hidden
+    .btns-content.flex.col.gap-1.mt-1
+      .btn.round.bg-primary Save
+      .btn.round.wb Cancel
+  .flex.js-e.nd.mt-2
+    .delete-widget-btn.btn.primary DELETE WIDGET
+
+

@@ -1,0 +1,26 @@
+.Upload-image{
+
+  
+  .drop-image-content{
+    padding-top: 1rem;
+    border-top: 1px solid var(--color-3);
+
+  }
+
+  label.dropImg{
+    min-height: 25rem;
+    user-select: none;
+
+    i{
+      display: block;
+      font-size: 8em;
+    }
+    &::after{
+      content: 'Drag and Drop or Upload image';
+    }
+  }
+
+  .delete-widget-btn{
+    padding: 0;
+  }
+}
